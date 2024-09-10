@@ -1,0 +1,53 @@
+.button {
+  font-family: $font-family;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button--primary {
+  padding: 5px 5px 5px 21px;
+  position: relative;
+  min-width: 136px;
+  min-height: 56px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  color: $primary;
+  background-color: $white;
+  border: 1px solid $primary;
+  border-radius: 30px;
+  align-content: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    background-image: url("../../img/sprite/arrow-link.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    padding: 12px;
+    top: 5px;
+    right: 5px;
+    background-color: $primary;
+    border-radius: 44px;
+  }
+}

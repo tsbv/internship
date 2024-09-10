@@ -1,0 +1,25 @@
+.hero-card {
+  p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $text;
+
+    @media (min-width: $desktop-width) {
+      line-height: 26px;
+    }
+  }
+}
+
+.hero-card__title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hero-card__link {
+  min-width: 154px;
+  min-height: 44px;
+  display: inline-block;
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header__toggle {
+  font-size: 14px;
+
+  &::before {
+    width: 18px;
+    height: 8px;
+    right: 19px;
+    background-image: url("../../img/sprite/burger.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    padding: 19px 14px;
+    width: 46px;
+    height: 46px;
+  }
+}

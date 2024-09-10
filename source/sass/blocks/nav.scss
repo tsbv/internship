@@ -1,0 +1,23 @@
+.nav {
+  display: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $white;
+  opacity: 0.7;
+}
+
+.nav__sublink {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 100%;
+  color: $white;
+  opacity: 0.6;
+}
