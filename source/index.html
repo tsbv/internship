@@ -291,6 +291,41 @@
           <img class="contacts__map" src="#" width="290" height="240" alt="Мы на карте.">
         </div>
       </section>
+      <section class="form" data-test="form">
+        <div class="container">
+          <h2 class="title form__title">Напишите нам</h2>
+          <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+          <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form__label">
+              Имя
+              <input class="form__field field" type="text" name="name" required>
+            </label>
+            <label class="form__label">
+              Телефон
+              <input class="form__field field" type="tel" name="phone" required>
+            </label>
+            <label class="form__label">
+              Ваше сообщение
+              <textarea class="form__field field form__textarea" rows="5" cols="10"></textarea>
+            </label>
+            <label class="form__label">
+              Выберите город
+              <select class="form__select" name="city">
+                <option value="">Не выбрано</option>
+                <option value="saint-petersburg">Санкт-Петербург</option>
+                <option value="saint-petersburg">Санкт-Петербург</option>
+                <option value="saint-petersburg">Санкт-Петербург</option>
+                <option value="saint-petersburg">Санкт-Петербург</option>
+              </select>
+            </label>
+            <label class="form__label">
+              <input class="form__checkbox field" type="checkbox" name="data-processing-consent" required>
+              Я согласен на обработку моих персональных данных
+            </label>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer" data-test="footer">
 
