@@ -8,10 +8,79 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body class="page__body">
-    <header class="header" data-test="header">
-
-    </header>
     <main class="page__main">
+      <section class="hero" data-test="hero">
+        <h1 class="visually-hidden">Internship – профессиональное обучение за рубежом.</h1>
+        <header class="header">
+          <div class="container">
+            <span class="logo">
+              <img class="logo__image" src="#" alt="Логотип Internship.">
+            </span>
+            <button class="header__toggle button js-toggle-button" type="button" aria-label="Открыть меню навигации.">Меню</button>
+            <nav class="nav">
+              <ul class="nav__menu">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">О проекте</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Программы</a>
+                  <ul class="nav__submenu">
+                    <li class="nav__subitem">
+                      <a class="nav__sublink" href="#">Стажировки</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="nav__sublink" href="#">Волонтёрство</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="nav__sublink" href="#">Учеба</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="nav__sublink" href="#">Религия</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Как поехать</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Новости</a>
+                  <ul class="nav__submenu">
+                    <li class="nav__subitem">
+                      <a class="nav__sublink" href="#">Последнее</a>
+                    </li>
+                    <li class="nav__subitem">
+                      <a class="nav__sublink" href="#">Архив</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="hero__content">
+          <div class="card card--1">
+            <h2 class="title hero__title">Глобальный профессиональный опыт обучения за рубежом</h2>
+            <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+            <a class="hero__link" href="#">Подробнее</a>
+          </div>
+          <div class="card card--2">
+            <h2 class="title hero__title">Волонтёрские программы — внесите свой вклад в общество</h2>
+            <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+            <a class="hero__link" href="#">Подробнее</a>
+          </div>
+          <div class="card card--3">
+            <h2 class="title hero__title">Программы стажировок в крупнейших компаниях мира</h2>
+            <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+            <a class="hero__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer class="footer" data-test="footer">
