@@ -1,1 +1,8 @@
-// Стили
+/* Глобальные */
+@import "./common/variables";
+@import "./common/global";
+@import "./common/fonts";
+
+/* Блоки */
+@import "./blocks/page";
+@import "./blocks/footer";
