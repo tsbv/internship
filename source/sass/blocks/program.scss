@@ -1,0 +1,53 @@
+.program {
+  p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: $text;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      line-height: 18px;
+    }
+  }
+}
+
+.program__name {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 17px;
+  }
+}
+
+.program__link {
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: $primary;
+  border-radius: 44px;
+  background-image: url("../../img/sprite/arrow-link.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.programs__link {
+  text-decoration: none;
+  display: inline-block;
+  min-width: 205px;
+}
