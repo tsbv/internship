@@ -1,4 +1,22 @@
 .nav {
+  width: 100%;
+  display: none;
+}
+
+.nav--open {
+  display: block;
+}
+
+.nav__menu {
+  padding: 35px 25px;
+  background-color: $primary;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.nav__submenu {
   display: none;
 }
 
