@@ -1,6 +1,25 @@
 .program {
+  margin: 0 0 30px;
+  min-height: 400px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: $blue-overlay;
+    z-index: -1;
+    border-radius: inherit;
+  }
+
   p {
     margin: 0;
+    max-width: 188px;
     font-size: 12px;
     line-height: 14px;
     color: $text;
@@ -14,14 +33,50 @@
       line-height: 18px;
     }
   }
+
+  &:not(:first-of-type) {
+    display: none;
+  }
+}
+
+.program--internships {
+  background-image: url("../../img/programs/program-slide-1-mobile.png");
+}
+
+.program--volunteering {
+  background-image: url("../../img/programs/program-slide-2-mobile.png");
+}
+
+.program--studies {
+  background-image: url("../../img/programs/program-slide-3-mobile.png");
+}
+
+.program__descr {
+  padding: 271px 10px 0;
 }
 
 .program__name {
   margin: 0;
+  padding: 18px 18px 6px;
+  max-width: 146px;
+  position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $primary;
+  background-color: $white;
+  border-radius: 12px 12px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: -18px;
+    bottom: 0;
+    background-image: url("../../img/sprite/angle-bottom.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -32,6 +87,17 @@
     font-size: 24px;
     line-height: 17px;
   }
+}
+
+.program__angle {
+  padding: 13px 18px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background-color: $white;
+  border-radius: 0 12px 12px;
 }
 
 .program__link {
