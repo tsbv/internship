@@ -300,32 +300,22 @@
           <h2 class="title form__title">Напишите нам</h2>
           <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
           <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form__label">
-              Имя
-              <input class="form__field field" type="text" name="name" required>
-            </label>
-            <label class="form__label">
-              Телефон
-              <input class="form__field field" type="tel" name="phone" required>
-            </label>
-            <label class="form__label">
-              Ваше сообщение
-              <textarea class="form__field field form__textarea" name="message" rows="5" cols="10"></textarea>
-            </label>
-            <label class="form__label">
-              Выберите город
-              <select class="form__select field" name="city">
-                <option value="">Не выбрано</option>
-                <option value="saint-petersburg">Санкт-Петербург</option>
-                <option value="saint-petersburg">Санкт-Петербург</option>
-                <option value="saint-petersburg">Санкт-Петербург</option>
-                <option value="saint-petersburg">Санкт-Петербург</option>
-              </select>
-            </label>
-            <label class="form__label form__label--checkbox">
-              <input class="form__checkbox field" type="checkbox" name="data-processing-consent" required>
-              Я согласен на обработку моих персональных данных
-            </label>
+            <label class="form__label" for="name">Имя</label>
+            <input class="form__field field" type="text" name="name" id="name" required>
+            <label class="form__label" for="phone">Телефон</label>
+            <input class="form__field field" type="tel" name="phone" id="phone" required>
+            <label class="form__label" for="textarea-message">Ваше сообщение</label>
+            <textarea class="form__field field form__textarea" name="textarea-message" id="textarea-message" rows="5" cols="10"></textarea>
+            <label class="form__label" for="select-city">Выберите город</label>
+            <select class="form__select field" name="city" id="select-city" required>
+              <option value="">Не выбрано</option>
+              <option value="saint-petersburg">Санкт-Петербург</option>
+              <option value="saint-petersburg">Санкт-Петербург</option>
+              <option value="saint-petersburg">Санкт-Петербург</option>
+              <option value="saint-petersburg">Санкт-Петербург</option>
+            </select>
+            <label class="form__label form__label--checkbox" for="checkbox">Я согласен на обработку моих персональных данных</label>
+            <input class="form__checkbox field" type="checkbox" name="data-processing-consent" id="checkbox" required>
             <button class="form__button button button--primary" type="submit">Отправить</button>
           </form>
         </div>
