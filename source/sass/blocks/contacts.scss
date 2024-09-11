@@ -1,0 +1,46 @@
+.contacts {
+  padding: 70px 15px;
+  background-color: $primary;
+}
+
+.contacts__title {
+  margin: 0 0 35px;
+  color: $white;
+}
+
+.contacts__name {
+  display: block;
+  margin: 0 0 15px;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $beige;
+  opacity: 0.8;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__address,
+.contacts__link {
+  display: inline-block;
+  margin: 0 0 20px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+  }
+}
+
+.contacts__map {
+  display: block;
+}
