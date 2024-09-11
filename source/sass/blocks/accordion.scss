@@ -1,0 +1,28 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  span {
+    font-size: 16px;
+    line-height: 18px;
+    color: $primary;
+  }
+
+  p {
+    padding: 0 17px 22px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $beige;
+  }
+}
+
+.accordion__item {
+  border: 2px solid $primary;
+  border-radius: 14px;
+}
+
+.accordion__item-button {
+  padding: 22px 17px;
+  text-align: left;
+}
