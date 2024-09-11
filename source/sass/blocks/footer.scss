@@ -1,3 +1,45 @@
 .footer {
   margin-top: auto;
+  padding: 40px 15px;
+}
+
+.footer__menu {
+  margin: 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 30px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 17px;
+  }
+}
+
+.footer__privacy-policy {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  color: $text;
+  border-bottom: 1px solid $text;
+}
+
+.footer__copyright {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: $text;
+  opacity: 0.6;
 }
