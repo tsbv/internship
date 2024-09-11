@@ -3,6 +3,8 @@
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   &::before {
     content: "";
@@ -47,7 +49,7 @@
 }
 
 .hero-card__descr {
-  padding: 229px 15px 30px;
+  padding: 229px 0 30px;
 }
 
 .hero-card__title {
