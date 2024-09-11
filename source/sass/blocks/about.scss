@@ -1,5 +1,5 @@
 .about {
-  padding: 50px 15px;
+  padding: 51px 15px 50px;
 }
 
 .about__description {
@@ -36,7 +36,8 @@
 }
 
 .about__title {
-  margin: 0 0 15px;
+  margin: 0 0 14px;
+  padding-left: 1px;
   font-size: 20px;
 
   @media (min-width: $tablet-width) {
@@ -68,6 +69,7 @@
 
 .about__button {
   margin: 0 0 40px;
+  padding: 6px 5px 5px 20px;
   min-width: 223px;
 }
 
@@ -75,15 +77,29 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
-  padding: 20px 20px 40px;
+  padding: 42px 20px 40px;
   background-color: $primary;
   border-radius: 20px;
 }
 
 .about__item {
-  padding: 16px 21px;
+  padding: 14px 20px 15px;
+  position: relative;
   border: 1px solid $beige;
   border-radius: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: -23px;
+    left: -21px;
+    background-color: $primary;
+    background-image: url("../../img/sprite/star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   span {
     display: inline-block;
@@ -119,5 +135,9 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
     }
+  }
+
+  &:last-child {
+    padding: 15px 20px;
   }
 }
