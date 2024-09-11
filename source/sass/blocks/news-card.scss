@@ -1,0 +1,44 @@
+.news-card {
+  p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: $text;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+.news-card__date {
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.news-card__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
