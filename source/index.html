@@ -358,8 +358,10 @@
               <option value="saint-petersburg">Санкт-Петербург</option>
               <option value="saint-petersburg">Санкт-Петербург</option>
             </select>
-            <label class="form__label form__label--checkbox" for="checkbox">Я согласен на обработку моих персональных данных</label>
-            <input class="form__checkbox field" type="checkbox" name="data-processing-consent" id="checkbox" required>
+            <div class="form__checkbox-wrapper">
+              <input class="form__checkbox field" type="checkbox" name="data-processing-consent" id="checkbox" required>
+              <label class="form__label form__label--checkbox" for="checkbox">Я согласен на обработку моих персональных данных</label>
+            </div>
             <button class="form__button button button--primary" type="submit">Отправить</button>
           </form>
         </div>

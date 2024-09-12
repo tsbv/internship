@@ -92,6 +92,7 @@
 }
 
 .form__label--checkbox {
+  max-width: 240px;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
@@ -128,4 +129,11 @@
   font-size: 14px;
   line-height: 100%;
   color: $beige;
+}
+
+.form__checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
