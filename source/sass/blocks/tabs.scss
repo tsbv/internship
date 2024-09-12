@@ -6,7 +6,7 @@
 }
 
 .tabs__button {
-  padding: 12px 14px;
+  padding: 13px 14px 9px;
   font-weight: 500;
   font-size: 12px;
   line-height: 100%;
@@ -17,6 +17,7 @@
   opacity: 0.6;
 
   &--active {
+    padding: 11px 15px 9px 14px;
     opacity: 1;
     border: 2px solid $primary;
     border-radius: 20px;

@@ -1,6 +1,11 @@
 .news-card {
+  margin-bottom: 20px;
+  min-height: 330px;
+  background-repeat: no-repeat;
+
   p {
     margin: 0;
+    max-width: 213px;
     font-size: 12px;
     line-height: 14px;
     color: $text;
@@ -15,22 +20,59 @@
       line-height: 18px;
     }
   }
+
+  &:nth-of-type(n+3) {
+    display: none;
+  }
 }
 
+.news-card__descr {
+  padding: 192px 0 0;
+}
+
+.news-card--internship {
+  background-image: url("../../img/news/news-slide-1-mobile.png");
+}
+
+.news-card--adventures {
+  min-height: 240px;
+  background-image: url("../../img/news/news-slide-2-mobile.png");
+
+  .news-card__descr {
+    padding: 132px 0 0;
+  }
+}
+
+.news-card--volunteer {
+  background-image: url("../../img/news/news-slide-3-mobile.png");
+}
+
+.news-card--career {
+  background-image: url("../../img/news/news-slide-4-mobile.png");
+}
+
+
 .news-card__date {
+  padding: 10px 12px 6px 0px;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: $primary;
+  background-color: $beige;
+  border-radius: 0 12px 0 0;
 }
 
 .news-card__title {
   margin: 0;
+  padding: 12px 18px 5px 0px;
+  max-width: 200px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $primary;
+  background-color: $beige;
+  border-radius: 0 12px 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -41,4 +83,16 @@
     font-size: 24px;
     line-height: 26px;
   }
+}
+
+.news-card__angle {
+  padding: 12px 10px 10px 0;
+  max-width: 263px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0 12px;
+  background-color: $beige;
 }
