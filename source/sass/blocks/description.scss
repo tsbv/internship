@@ -1,10 +1,15 @@
 .description {
-  margin: 0 0 25px;
+  margin: 0 0 24px;
   display: grid;
   grid-template-columns: 108px 67px;
-  grid-auto-rows: max-content;
   grid-column: 1 / -1;
-  gap: 8px 25px;
+  gap: 0 25px;
+}
+
+.description__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .description__term {

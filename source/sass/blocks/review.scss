@@ -1,5 +1,5 @@
 .review {
-  padding: 32px 17px;
+  padding: 30px 15px 30px;
   display: grid;
   grid-template-columns: 60px 186px;
   gap: 0 10px;
@@ -27,12 +27,13 @@
 }
 
 .review__avatar {
-  margin: 0 0 15px;
+  margin: 0 0 16px;
   display: block;
 }
 
 .review__name {
   margin: 0;
+  padding: 12px 0 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
