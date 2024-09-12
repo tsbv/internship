@@ -1,6 +1,17 @@
 .footer {
   margin-top: auto;
   padding: 40px 15px;
+  background-color: $beige;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  margin: 0 auto 20px;
+  display: block;
 }
 
 .footer__menu {
@@ -28,7 +39,9 @@
 }
 
 .footer__privacy-policy {
-  display: inline-block;
+  margin: 0 0 13px;
+  max-width: 182px;
+  align-self: center;
   text-decoration: none;
   font-size: 12px;
   line-height: 14px;
@@ -37,7 +50,10 @@
 }
 
 .footer__copyright {
+  margin: 0 0 15px;
+  order: 1;
   display: block;
+  align-self: center;
   font-size: 12px;
   line-height: 14px;
   color: $text;
