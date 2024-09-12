@@ -68,4 +68,12 @@
   &::after {
     background-color: $white;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1240px;
+  }
 }
