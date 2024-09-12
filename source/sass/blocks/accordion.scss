@@ -4,13 +4,16 @@
   gap: 10px;
 
   span {
+    max-width: 184px;
+    display: inline-block;
     font-size: 16px;
     line-height: 18px;
     color: $primary;
   }
 
   p {
-    padding: 0 17px 22px;
+    padding: 0 15px 22px;
+    display: none;
     font-size: 14px;
     line-height: 20px;
     color: $beige;
@@ -23,6 +26,75 @@
 }
 
 .accordion__item-button {
-  padding: 22px 17px;
+  padding: 22px 15px 21px;
+  width: 100%;
+  position: relative;
+  display: block;
   text-align: left;
+}
+
+.accordion__item:nth-child(4),
+.accordion__item:nth-child(5) {
+  .accordion__item-button {
+    padding: 20px 15px 19px;
+  }
+}
+
+.accordion__item-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  right: 15px;
+  padding: 10px;
+  display: inline-block;
+  transform: translateY(-50%);
+  border-radius: 30px;
+  background-color: $primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 1px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+  }
+}
+
+.accordion__item-button.accordion__item-button--active {
+  .accordion__item-icon {
+    background-color: $white;
+  }
+
+  .accordion__item-icon::before {
+    background-color: $primary;
+  }
+
+  .accordion__item-icon::after {
+    width: 0;
+  }
+
+  + p {
+    margin: 0;
+    padding: 0 15px 20px;
+    opacity: 1;
+    transition: all 200ms linear;
+    will-change: opacity, max-height, margin;
+  }
 }
