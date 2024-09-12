@@ -52,7 +52,8 @@
 }
 
 .news-card__date {
-  padding: 10px 12px 6px 0;
+  padding: 10px 12px 1px 0;
+  position: relative;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0.01em;
@@ -60,11 +61,32 @@
   color: $primary;
   background-color: $beige;
   border-radius: 0 12px 0 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/sprite/angle-news.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    top: -16px;
+    left: 0;
+  }
+
+  &::after {
+    right: -16px;
+    bottom: 0;
+  }
 }
 
 .news-card__title {
   margin: 0;
   padding: 12px 18px 5px 0;
+  position: relative;
   max-width: 200px;
   font-weight: 400;
   font-size: 16px;
@@ -72,6 +94,17 @@
   color: $primary;
   background-color: $beige;
   border-radius: 0 12px 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -16px;
+    bottom: 0;
+    background-image: url("../../img/sprite/angle-news.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -86,6 +119,7 @@
 
 .news-card__angle {
   padding: 12px 10px 10px 0;
+  position: relative;
   max-width: 263px;
   display: flex;
   justify-content: space-between;
@@ -94,4 +128,15 @@
   gap: 10px;
   border-radius: 0 12px;
   background-color: $beige;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -16px;
+    bottom: 0;
+    background-image: url("../../img/sprite/angle-news.svg");
+    background-repeat: no-repeat;
+  }
 }
