@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 6px 15px;
 }
 
 .header__toggle {
@@ -28,6 +28,7 @@
     right: 18px;
     background-image: url("../../img/sprite/burger.svg");
     background-repeat: no-repeat;
+    transition: background-image 0.3s;
   }
 
   &::after {
@@ -36,5 +37,35 @@
     height: 46px;
     top: 3px;
     right: 4px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: $white;
+    }
+  }
+
+  &:active {
+    border-color: initial;
+  }
+}
+
+.header__toggle--opened {
+  width: 100%;
+  max-width: 290px;
+  position: absolute;
+  top: 0;
+  color: $white;
+  background-color: $primary;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    right: 17px;
+    background-image: url("../../img/sprite/burger-close.svg");
+  }
+
+  &::after {
+    background-color: $white;
   }
 }

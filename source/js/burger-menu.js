@@ -4,9 +4,11 @@ const toggleBurgerHandler = () => {
   const overlay = document.createElement('div');
   overlay.classList.add('overlay');
   navToggleEl.addEventListener('click', () => {
-    navEl.classList.toggle('nav--open');
-    overlay.style.display = navEl.classList.contains('nav--open') ? 'block' : 'none';
-    if (navEl.classList.contains('nav--open')) {
+    navEl.classList.toggle('nav--opened');
+    navToggleEl.classList.toggle('header__toggle--opened');
+    const isOpen = navEl.classList.contains('nav--opened');
+    if (isOpen) {
+      overlay.style.display = 'block';
       document.body.appendChild(overlay);
     } else {
       overlay.remove();
