@@ -34,8 +34,9 @@
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
-    background-image: url("../../img/sprite/arrow-link.svg");
-    background-repeat: no-repeat;
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-arrow-link-view");
+    mask-repeat: no-repeat;
     z-index: 1;
   }
 
@@ -54,12 +55,22 @@
 
 .button--circle {
   padding: 10px;
+  position: relative;
   width: 30px;
   height: 30px;
   display: inline-block;
-  background-color: #316dc2;
   border-radius: 44px;
-  background-image: url("../../img/sprite/arrow-link.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #316dc2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-arrow-link-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 10px 10px;
+  }
 }

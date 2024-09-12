@@ -74,7 +74,7 @@
     height: 18px;
     right: -18px;
     bottom: 0;
-    background-image: url("../../img/sprite/angle-bottom.svg");
+    background-image: url("/__spritemap#sprite-angle-bottom-view");
     background-repeat: no-repeat;
   }
 
@@ -102,14 +102,24 @@
 
 .program__link {
   padding: 10px;
+  position: relative;
   width: 30px;
   height: 30px;
   display: inline-block;
   background-color: $primary;
   border-radius: 44px;
-  background-image: url("../../img/sprite/arrow-link.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-arrow-link-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 10px 10px;
+  }
 }
 
 .programs__link {

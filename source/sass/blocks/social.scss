@@ -23,11 +23,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: $white;
     mask-image: url("/__spritemap#sprite-vk-view");
     mask-size: 12px 8px;
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: $white;
   }
 
   &--ok::before {
@@ -38,11 +38,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: $white;
     mask-image: url("/__spritemap#sprite-ok-view");
     mask-size: 8px 12px;
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: $white;
   }
 
   &--reddit::before {
@@ -53,10 +53,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: $white;
     mask-image: url("/__spritemap#sprite-reddit-view");
     mask-size: 12px 12px;
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: $white;
   }
 }
