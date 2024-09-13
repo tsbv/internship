@@ -37,6 +37,26 @@
   &:not(:first-of-type) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    &:nth-of-type(-n + 2) {
+      display: block;
+    }
+
+    &:nth-of-type(n + 3) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-of-type(-n + 3) {
+      display: block;
+    }
+
+    &:nth-of-type(n + 4) {
+      display: none;
+    }
+  }
 }
 
 .program--internships {
