@@ -6,6 +6,10 @@
   background-color: $white;
   border-radius: 30px;
   transform: translateY(1px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(2px);
+  }
 }
 
 .logo__image {
