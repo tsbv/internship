@@ -1,5 +1,9 @@
 .about {
   padding: 51px 15px 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 15px;
+  }
 }
 
 .about__description {
@@ -9,21 +13,8 @@
     line-height: 22px;
     color: $text;
 
-    &:last-of-type {
-      margin: 0 0 30px;
-      font-size: 14px;
-      line-height: 20px;
-
-      @media (min-width: $tablet-width) {
-        font-size: 16px;
-      }
-
-      @media (min-width: $desktop-width) {
-        line-height: 26px;
-      }
-    }
-
     @media (min-width: $tablet-width) {
+      margin: 0 0 39px;
       font-size: 20px;
       line-height: 26px;
     }
@@ -31,6 +22,22 @@
     @media (min-width: $desktop-width) {
       font-size: 22px;
       line-height: 32px;
+    }
+
+    &:last-of-type {
+      margin: 0 0 30px;
+      font-size: 14px;
+      line-height: 20px;
+
+      @media (min-width: $tablet-width) {
+        margin: 0 0 40px;
+        max-width: 498px;
+        font-size: 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        line-height: 26px;
+      }
     }
   }
 }
@@ -41,6 +48,8 @@
   font-size: 20px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
+    padding: 0;
     font-size: 34px;
     line-height: 50px;
   }
@@ -57,6 +66,7 @@
   line-height: 22px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 30px;
     font-size: 28px;
     line-height: 100%;
   }
@@ -71,6 +81,22 @@
   margin: 0 0 40px;
   padding: 6px 5px 5px 20px;
   min-width: 223px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px;
+    padding: 5px 5px 5px 30px;
+    min-width: 279px;
+    min-height: 56px;
+
+    &::before {
+      right: 22px;
+    }
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+  }
 }
 
 .about__list {
@@ -80,6 +106,13 @@
   padding: 42px 20px 40px;
   background-color: $primary;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 50px 50px 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 54px 52px;
+  }
 }
 
 .about__item {
@@ -87,6 +120,10 @@
   position: relative;
   border: 1px solid $beige;
   border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 20px 15px;
+  }
 
   &::before {
     content: "";
@@ -112,6 +149,8 @@
     color: $white;
 
     @media (min-width: $tablet-width) {
+      margin: 0 0 14px;
+      max-width: 211px;
       font-size: 20px;
       line-height: 22px;
     }
@@ -140,5 +179,9 @@
 
   &:last-child {
     padding: 15px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 16px 20px 15px;
+    }
   }
 }
