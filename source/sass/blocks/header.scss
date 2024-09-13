@@ -17,6 +17,7 @@
 .header__toggle {
   min-height: 54px;
   font-size: 14px;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     min-height: 56px;
