@@ -24,6 +24,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+    min-height: 56px;
   }
 
   &::before {
@@ -38,6 +39,10 @@
     mask-image: url("/__spritemap#sprite-arrow-link-view");
     mask-repeat: no-repeat;
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      right: 22px;
+    }
   }
 
   &::after {
@@ -50,6 +55,11 @@
     right: 4px;
     background-color: $primary;
     border-radius: 44px;
+
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
   }
 }
 
