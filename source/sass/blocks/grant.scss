@@ -3,6 +3,10 @@
   background-color: $primary;
   counter-reset: grant-counter;
 
+  @media (min-width: $tablet-width) {
+    padding: 100px 15px;
+  }
+
   p {
     margin: 0 0 30px;
     font-size: 14px;
@@ -10,7 +14,9 @@
     color: $white;
 
     @media (min-width: $tablet-width) {
+      max-width: 498px;
       font-size: 16px;
+      color: $beige;
     }
 
     @media (min-width: $desktop-width) {
@@ -31,12 +37,22 @@
     left: 0;
     background-image: url("../../img/grant/distance-mobile.png");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/grant/distance-tablet.png");
+      height: 375px;
+      bottom: -415px;
+    }
   }
 }
 
 .grant__title {
   margin: 0 0 14px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px;
+  }
 }
 
 .grant__subtitle {
@@ -47,6 +63,7 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    margin: 465px 0 45px;
     font-size: 28px;
     line-height: 100%;
   }
@@ -62,6 +79,13 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 48px;
+  }
 }
 
 .grant__item {
@@ -73,6 +97,15 @@
   border: 1px solid $beige;
   border-radius: 16px;
   counter-increment: grant-counter;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 25px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+  }
 
   &::before {
     content: counter(grant-counter);
@@ -89,5 +122,15 @@
     line-height: 100%;
     text-align: center;
     color: $white;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      width: 42px;
+      height: 42px;
+      top: -17px;
+      left: -21px;
+      font-size: 22px;
+      letter-spacing: 0.01em;
+    }
   }
 }
