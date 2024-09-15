@@ -43,14 +43,14 @@
 
 .review__name {
   margin: 0;
-  padding: 12px 0 0;
+  padding: 12px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $primary;
 
   @media (min-width: $tablet-width) {
-    padding: 22px 0 0;
+    padding: 22px 0;
     font-size: 20px;
     line-height: 24px;
   }
