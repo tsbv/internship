@@ -5,3 +5,9 @@
 .reviews__title {
   margin: 0 0 35px;
 }
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

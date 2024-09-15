@@ -2,14 +2,26 @@
   margin: 0 0 24px;
   display: grid;
   grid-template-columns: 108px 67px;
-  grid-column: 1 / -1;
+  align-items: center;
   gap: 0 25px;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
+    padding: 0 0 30px;
+    grid-template-columns: 126px 78px;
+    grid-column: 3;
+  }
 }
 
 .description__wrapper {
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 11px;
+  }
 }
 
 .description__term {

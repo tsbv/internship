@@ -6,6 +6,13 @@
   border: 2px solid $primary;
   border-radius: 16px;
 
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    min-width: 560px;
+    grid-template-columns: 90px 57px 279px;
+    gap: 0 15px;
+  }
+
   p {
     margin: 0;
     font-size: 14px;
@@ -20,14 +27,17 @@
       line-height: 26px;
     }
   }
+}
 
-  &:not(:first-of-type) {
-    display: none;
+.review__avatar-wrapper {
+  margin: 0 0 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
   }
 }
 
 .review__avatar {
-  margin: 0 0 16px;
   display: block;
 }
 
@@ -40,6 +50,7 @@
   color: $primary;
 
   @media (min-width: $tablet-width) {
+    padding: 22px 0 0;
     font-size: 20px;
     line-height: 24px;
   }
@@ -60,6 +71,7 @@
   color: $primary;
 
   @media (min-width: $tablet-width) {
+    gap: 24px;
     font-size: 20px;
     line-height: 24px;
   }

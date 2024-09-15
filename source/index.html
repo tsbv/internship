@@ -307,40 +307,62 @@
       <section class="reviews" data-test="reviews">
         <div class="container">
           <h2 class="title reviews__title">Отзывы</h2>
-          <div>
-            <div class="review">
-              <img class="review__avatar" src="img/reviews/review-1-mobile.png" width="60" height="60" alt="Аватарка пользователя Лола Алекс.">
-              <h3 class="review__name">Лола <br> Алекс</h3>
-              <dl class="description">
-                <div class="description__wrapper">
-                  <dt class="description__term">Программа</dt>
-                  <dd class="description__definition">Masa Art Challenge</dd>
+          <ul class="reviews__list reset-list">
+            <li class="reviews__item">
+              <div class="review">
+                <div class="review__avatar-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-1-tablet.webp 1x, img/reviews/review-1-tablet@2x.webp 2x" width="90" height="90">
+                    <source type="image/webp" srcset="img/reviews/review-1-mobile.webp 1x, img/reviews/review-1-mobile.webp 2x" width="60" height="60">
+                    <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-1-tablet.png 1x, img/reviews/review-1-tablet@2x.png 2x" width="90" height="90">
+                    <img class="review__avatar" src="img/reviews/review-1-mobile.png" srcset="img/reviews/review-1-mobile@2x.png 2x" width="60" height="60" alt="Аватарка пользователя Лола Алекс.">
+                  </picture>
                 </div>
-                <div class="description__wrapper">
-                  <dt class="description__term">Дата</dt>
-                  <dd class="description__definition">Осень 2022</dd>
+                <h3 class="review__name">Лола <br> Алекс</h3>
+                <dl class="description">
+                  <div class="description__wrapper">
+                    <dt class="description__term">Программа</dt>
+                    <dd class="description__definition">Masa Art Challenge</dd>
+                  </div>
+                  <div class="description__wrapper">
+                    <dt class="description__term">Дата</dt>
+                    <dd class="description__definition">Осень 2022</dd>
+                  </div>
+                </dl>
+                <blockquote class="review__blockquote">
+                  Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!
+                  <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+                </blockquote>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="review">
+                <div class="review__avatar-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-2-tablet.webp 1x, img/reviews/review-2-tablet@2x.webp 2x" width="90" height="90">
+                    <source type="image/webp" srcset="img/reviews/review-2-mobile.webp 1x, img/reviews/review-2-mobile.webp 2x" width="60" height="60">
+                    <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-2-tablet.png 1x, img/reviews/review-2-tablet@2x.png 2x" width="90" height="90">
+                    <img class="review__avatar" src="img/reviews/review-2-mobile.png" srcset="img/reviews/review-1-mobile@2x.png 2x" width="60" height="60" alt="Аватарка пользователя Давид Иванов.">
+                  </picture>
                 </div>
-              </dl>
-              <blockquote class="review__blockquote">
-                Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!
-                <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
-              </blockquote>
-            </div>
-            <div class="review">
-              <img class="review__avatar" src="img/reviews/review-2-mobile.png" width="60" height="60" alt="Аватарка пользователя Давид Иванов.">
-              <h3 class="review__name">Давид <br> Иванов</h3>
-              <dl class="description">
-                <dt class="description__term">Программа</dt>
-                <dd class="description__definition">Volunteer Chance</dd>
-                <dt class="description__term">Дата</dt>
-                <dd class="description__definition">Лето 2022</dd>
-              </dl>
-              <blockquote class="review__blockquote">
-                Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!
-                <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
-              </blockquote>
-            </div>
-          </div>
+                <h3 class="review__name">Давид <br> Иванов</h3>
+                <dl class="description">
+                  <div class="description__wrapper">
+                    <dt class="description__term">Программа</dt>
+                    <dd class="description__definition">Volunteer Chance</dd>
+                  </div>
+                  <div class="description__wrapper">
+                    <dt class="description__term">Дата</dt>
+                    <dd class="description__definition">Лето 2022</dd>
+                  </div>
+                </dl>
+                <blockquote class="review__blockquote">
+                  Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.
+                  <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+                </blockquote>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="contacts" data-test="contacts">
