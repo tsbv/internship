@@ -388,29 +388,31 @@
       </section>
       <section class="form" data-test="form">
         <div class="container form__container">
-          <h2 class="title form__title">Напишите нам</h2>
-          <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-          <form class="form__wrapper" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form__label" for="name">Имя</label>
-            <input class="form__field field" type="text" name="name" id="name" required>
-            <label class="form__label" for="phone">Телефон</label>
-            <input class="form__field field" type="tel" name="phone" id="phone" required>
-            <label class="form__label" for="message">Ваше сообщение</label>
-            <textarea class="form__field field form__textarea" name="message" id="message" rows="5" cols="10"></textarea>
-            <label class="form__label" for="city">Выберите город</label>
-            <select class="form__select field" name="city" id="city" required>
-              <option value="">Не выбрано</option>
-              <option value="saint-petersburg">Санкт-Петербург</option>
-              <option value="saint-petersburg">Санкт-Петербург</option>
-              <option value="saint-petersburg">Санкт-Петербург</option>
-              <option value="saint-petersburg">Санкт-Петербург</option>
-            </select>
-            <div class="form__checkbox-wrapper">
-              <input class="form__checkbox field" type="checkbox" name="data-processing-consent" id="checkbox" required>
-              <label class="form__label form__label--checkbox" for="checkbox">Я согласен на обработку моих персональных данных</label>
-            </div>
-            <button class="form__button button button--primary" type="submit">Отправить</button>
-          </form>
+          <div class="form__wrapper">
+            <h2 class="title form__title">Напишите нам</h2>
+            <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <form class="form__element" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="form__label" for="name">Имя</label>
+              <input class="form__field field" type="text" name="name" id="name" required>
+              <label class="form__label" for="phone">Телефон</label>
+              <input class="form__field field" type="tel" name="phone" id="phone" required>
+              <label class="form__label" for="message">Ваше сообщение</label>
+              <textarea class="form__field field form__textarea" name="message" id="message" rows="5" cols="10"></textarea>
+              <label class="form__label" for="city">Выберите город</label>
+              <select class="form__select field" name="city" id="city" required>
+                <option value="">Не выбрано</option>
+                <option value="saint-petersburg">Санкт-Петербург</option>
+                <option value="saint-petersburg">Санкт-Петербург</option>
+                <option value="saint-petersburg">Санкт-Петербург</option>
+                <option value="saint-petersburg">Санкт-Петербург</option>
+              </select>
+              <div class="form__checkbox-wrapper">
+                <input class="form__checkbox field" type="checkbox" name="data-processing-consent" id="checkbox" required>
+                <label class="form__label form__label--checkbox" for="checkbox">Я согласен на обработку моих персональных данных</label>
+              </div>
+              <button class="form__button button button--primary" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

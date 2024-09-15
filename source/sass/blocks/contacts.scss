@@ -1,6 +1,10 @@
 .contacts {
   padding: 76px 15px 75px;
   background-color: $primary;
+
+  @media (min-width: $tablet-width) {
+    padding: 76px 15px 100px;
+  }
 }
 
 .contacts__container {
