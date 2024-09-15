@@ -1,8 +1,7 @@
 const navEl = document.querySelector('.nav');
 const navToggleEl = document.querySelector('.header__toggle');
 const toggleBurgerHandler = () => {
-  const overlay = document.createElement('div');
-  overlay.classList.add('overlay');
+  const overlay = Object.assign(document.createElement('div'), { className: 'overlay' });
   navToggleEl.addEventListener('click', () => {
     navEl.classList.toggle('nav--opened');
     navToggleEl.classList.toggle('header__toggle--opened');
