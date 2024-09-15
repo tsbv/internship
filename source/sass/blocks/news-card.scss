@@ -1,7 +1,25 @@
 .news-card {
   margin-bottom: 20px;
   min-height: 330px;
-  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    min-width: 324px;
+    min-height: 350px;
+  }
 
   p {
     margin: 0;
@@ -11,6 +29,7 @@
     color: $text;
 
     @media (min-width: $tablet-width) {
+      max-width: 176px;
       font-size: 14px;
       line-height: 20px;
     }
@@ -20,35 +39,72 @@
       line-height: 18px;
     }
   }
-
-  &:nth-of-type(n + 3) {
-    display: none;
-  }
 }
 
 .news-card__descr {
-  padding: 192px 0 0;
+  margin-top: auto;
 }
 
 .news-card--internship {
-  background-image: url("../../img/news/news-slide-1-mobile.png");
+  &::before {
+    background-image: url("../../img/news/news-slide-1-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/news/news-slide-1-tablet.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/news/news-slide-1-desktop.png");
+    }
+  }
 }
 
 .news-card--adventures {
-  min-height: 240px;
-  background-image: url("../../img/news/news-slide-2-mobile.png");
+  .news-card__date {
+    padding: 13px 13px 5px 0;
+  }
 
-  .news-card__descr {
-    padding: 132px 0 0;
+  &::before {
+    min-height: 240px;
+    background-image: url("../../img/news/news-slide-2-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      min-height: 350px;
+      background-image: url("../../img/news/news-slide-2-tablet.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/news/news-slide-2-desktop.png");
+    }
   }
 }
 
 .news-card--volunteer {
-  background-image: url("../../img/news/news-slide-3-mobile.png");
+  &::before {
+    background-image: url("../../img/news/news-slide-3-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/news/news-slide-3-tablet.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/news/news-slide-3-desktop.png");
+    }
+  }
 }
 
 .news-card--career {
-  background-image: url("../../img/news/news-slide-4-mobile.png");
+  &::before {
+    background-image: url("../../img/news/news-slide-4-mobile.png");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/news/news-slide-4-tablet.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/news/news-slide-4-desktop.png");
+    }
+  }
 }
 
 .news-card__date {
@@ -61,6 +117,11 @@
   color: $primary;
   background-color: $beige;
   border-radius: 0 12px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 12px 5px 0;
+    display: inline-block;
+  }
 
   &::before,
   &::after {
@@ -107,6 +168,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 11px 18px 5px 0;
+    max-width: 207px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -138,5 +201,11 @@
     bottom: 0;
     background-image: url("/__spritemap#sprite-angle-news-view");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 18px 15px 0;
+    max-width: 240px;
+    border-radius: 0 12px 0 0;
   }
 }
