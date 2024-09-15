@@ -105,6 +105,14 @@
     bottom: -10px;
     background-image: url("/__spritemap#sprite-angle-view");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 26px;
+      height: 26px;
+      right: 40px;
+      bottom: -26px;
+      background-image: url("/__spritemap#sprite-angle-tablet-view");
+    }
   }
 }
 
@@ -124,11 +132,12 @@
     border-radius: 0 0 14px 14px;
 
     @media (min-width: $tablet-width) {
-      width: 271px;
+      width: 272px;
       height: 100%;
-      top: 43%;
+      top: 50%;
       left: 72%;
       border-radius: 0 0 30px;
+      transform: translate(-50%, -57.2%);
     }
   }
 
