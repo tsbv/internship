@@ -130,6 +130,12 @@
 
 .form__textarea {
   min-height: 88px;
+  width: 100%;
+  resize: vertical;
+}
+
+.form__textarea::-webkit-resizer {
+  display: none;
 }
 
 .form__label--checkbox {
