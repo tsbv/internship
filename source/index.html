@@ -342,7 +342,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-2-tablet.webp 1x, img/reviews/review-2-tablet@2x.webp 2x" width="90" height="90">
                     <source type="image/webp" srcset="img/reviews/review-2-mobile.webp 1x, img/reviews/review-2-mobile.webp 2x" width="60" height="60">
                     <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-2-tablet.png 1x, img/reviews/review-2-tablet@2x.png 2x" width="90" height="90">
-                    <img class="review__avatar" src="img/reviews/review-2-mobile.png" srcset="img/reviews/review-1-mobile@2x.png 2x" width="60" height="60" alt="Аватарка пользователя Давид Иванов.">
+                    <img class="review__avatar" src="img/reviews/review-2-mobile.png" srcset="img/reviews/review-2-mobile@2x.png 2x" width="60" height="60" alt="Аватарка пользователя Давид Иванов.">
                   </picture>
                 </div>
                 <h3 class="review__name">Давид <br> Иванов</h3>
@@ -366,16 +366,23 @@
         </div>
       </section>
       <section class="contacts" data-test="contacts">
-        <div class="container">
+        <div class="container contacts__container">
           <h2 class="title contacts__title">Контакты</h2>
-          <span class="contacts__name">Центральный офис</span>
+          <span class="contacts__name contacts__name--office">Центральный офис</span>
           <address class="contacts__address">г. Новосибирск, ул. Щетинкина 68, культурный центр</address>
-          <span class="contacts__name">Телефон</span>
-          <a class="contacts__link" href="tel:+796387687676">+7 963 876 876 76</a>
-          <span class="contacts__name">Email</span>
-          <a class="contacts__link" href="mailto:info@stazh.ru">Info@stazh.ru</a>
+          <span class="contacts__name contacts__name--phone">Телефон</span>
+          <a class="contacts__link contacts__link--phone" href="tel:+796387687676">+7 963 876 876 76</a>
+          <span class="contacts__name contacts__name--email">Email</span>
+          <a class="contacts__link contacts__link--email" href="mailto:info@stazh.ru">Info@stazh.ru</a>
           <div class="contacts__map-wrapper">
-            <img class="contacts__map" src="img/map/map-mobile.jpg" width="290" height="240" alt="Мы на карте.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x" width="1240" height="486">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x" width="678" height="500">
+              <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x" width="290" height="240">
+              <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x" width="1240" height="486">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x" width="678" height="500">
+              <img class="contacts__map" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x" width="290" height="240" alt="Мы на карте.">
+            </picture>
           </div>
         </div>
       </section>
