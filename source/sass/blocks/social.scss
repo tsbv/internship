@@ -1,6 +1,4 @@
 .social {
-  order: 2;
-  max-width: 98px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -15,6 +13,11 @@
   background-color: $primary;
   border-radius: 50%;
 
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+  }
+
   &--vk::before {
     content: "";
     position: absolute;
@@ -28,6 +31,12 @@
     mask-size: 12px 8px;
     mask-repeat: no-repeat;
     mask-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 16px;
+      height: 9px;
+      mask-size: 16px 9px;
+    }
   }
 
   &--ok::before {
@@ -43,6 +52,12 @@
     mask-size: 8px 12px;
     mask-repeat: no-repeat;
     mask-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 10px;
+      height: 17px;
+      mask-size: 10px 17px;
+    }
   }
 
   &--reddit::before {
@@ -58,5 +73,11 @@
     mask-size: 12px 12px;
     mask-repeat: no-repeat;
     mask-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 16px;
+      height: 17px;
+      mask-size: 16px 17px;
+    }
   }
 }
