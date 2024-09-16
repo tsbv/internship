@@ -1,5 +1,9 @@
 .reviews {
   padding: 50px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 45px;
+  }
 }
 
 .reviews__title {
