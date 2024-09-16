@@ -452,6 +452,34 @@
         <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__wrapper modal__contact">
+        <button class="button modal__close-button" type="button" aria-label="Закрыть модальное окно."></button>
+        <h2 class="modal__title">Напишите нам</h2>
+        <p class="modal__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal-form__label" for="modal-name">Имя</label>
+          <input class="modal-form__field field" type="text" name="name" id="modal-name" required>
+          <label class="modal-form__label" for="modal-phone">Телефон</label>
+          <input class="modal-form__field field" type="tel" name="phone" id="modal-phone" required>
+          <label class="modal-form__label" for="modal-message">Ваше сообщение</label>
+          <textarea class="modal-form__field field modal-form__textarea" name="message" id="modal-message"></textarea>
+          <label class="modal-form__label" for="modal-city">Выберите город</label>
+          <select class="modal-form__select field" name="city" id="modal-city" required>
+            <option value="" aria-label="Не выбрано.">&nbsp;</option>
+            <option value="saint-petersburg">Санкт-Петербург</option>
+            <option value="saint-petersburg">Санкт-Петербург</option>
+            <option value="saint-petersburg">Санкт-Петербург</option>
+            <option value="saint-petersburg">Санкт-Петербург</option>
+          </select>
+          <div class="modal-form__checkbox-wrapper">
+            <input class="modal-form__checkbox field" type="checkbox" name="data-processing-consent" id="modal-checkbox" required>
+            <label class="modal-form__label modal-form__label--checkbox" for="modal-checkbox">Я согласен на обработку моих персональных данных</label>
+          </div>
+          <button class="modal-form__button button button--primary" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
