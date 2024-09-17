@@ -1,3 +1,5 @@
-.hero {
-  // padding: 20px 15px;
+.hero__item {
+  &:not(:first-child) {
+    display: none;
+  }
 }
