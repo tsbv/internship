@@ -54,6 +54,7 @@
     left: 0;
     background-image: url("../../img/grant/distance-mobile.png");
     background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/grant/distance-tablet.png");
