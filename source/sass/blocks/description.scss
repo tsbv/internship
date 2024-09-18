@@ -12,6 +12,10 @@
     grid-template-columns: 126px 78px;
     grid-column: 3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 92px;
+  }
 }
 
 .description__wrapper {
@@ -21,6 +25,10 @@
 
   @media (min-width: $tablet-width) {
     gap: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
   }
 }
 

@@ -13,6 +13,12 @@
     gap: 0 15px;
   }
 
+  @media (min-width: $desktop-width) {
+    min-width: 604px;
+    grid-template-columns: 90px 63px 316px;
+    gap: 30px 15px;
+  }
+
   p {
     margin: 0;
     font-size: 14px;
@@ -35,6 +41,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 31px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .review__avatar {
@@ -56,6 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 21px 0;
     font-size: 18px;
   }
 }
@@ -77,6 +88,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 504px;
+
+    /* min-height: 483px; */
+    gap: 25px;
     font-size: 24px;
     line-height: 26px;
   }
