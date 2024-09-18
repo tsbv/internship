@@ -5,11 +5,16 @@
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     min-width: 324px;
     min-height: 420px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 392px;
   }
 
   &::before {
@@ -37,6 +42,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      max-width: 239px;
       line-height: 18px;
     }
   }
@@ -48,6 +54,10 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../img/programs/program-slide-1-tablet.png");
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/programs/program-slide-1-desktop.png");
+  }
 }
 
 .program--volunteering {
@@ -55,6 +65,10 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/programs/program-slide-2-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/programs/program-slide-2-desktop.png");
   }
 }
 
@@ -64,6 +78,10 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../img/programs/program-slide-3-tablet.png");
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/programs/program-slide-3-desktop.png");
+  }
 }
 
 .program__descr {
@@ -71,6 +89,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 285px 20px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 280px 20px 10px;
   }
 }
 
@@ -105,6 +127,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 18px 18px 6px;
+    max-width: 194px;
     font-size: 24px;
     line-height: 17px;
   }
@@ -119,6 +143,12 @@
   gap: 16px;
   background-color: $white;
   border-radius: 0 12px 12px;
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 18px 15px;
+    max-width: 321px;
+    min-height: 82px;
+  }
 }
 
 .program__link {

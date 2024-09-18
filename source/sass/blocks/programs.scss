@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 53px 45px 112px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 45px 122px;
+  }
 }
 
 .programs__container {
@@ -14,6 +18,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 37px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 39px 0;
   }
 }
 
@@ -47,6 +55,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @media (min-width: $desktop-width) {
+    gap: 32px;
+  }
 }
 
 .programs__item {
