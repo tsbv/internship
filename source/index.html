@@ -408,14 +408,17 @@
               <input class="form__field field" type="tel" name="phone" id="phone" required>
               <label class="form__label" for="message">Ваше сообщение</label>
               <textarea class="form__field field form__textarea" name="message" id="message"></textarea>
-              <label class="form__label" for="city">Выберите город</label>
-              <select class="form__select field" name="city" id="city" required>
-                <option value="" aria-label="Не выбрано.">&nbsp;</option>
-                <option value="saint-petersburg">Санкт-Петербург</option>
-                <option value="saint-petersburg">Санкт-Петербург</option>
-                <option value="saint-petersburg">Санкт-Петербург</option>
-                <option value="saint-petersburg">Санкт-Петербург</option>
-              </select>
+              <label class="form__label" for="select-city">Выберите город</label>
+              <div class="select">
+                <button class="select__button button" type="button" aria-label="Выберите город."></button>
+                <ul class="select__list reset-list">
+                  <li class="select__item" data-value="saint-petersburg">Санкт-Петербург</li>
+                  <li class="select__item" data-value="saint-petersburg">Санкт-Петербург</li>
+                  <li class="select__item" data-value="saint-petersburg">Санкт-Петербург</li>
+                  <li class="select__item" data-value="saint-petersburg">Санкт-Петербург</li>
+                </ul>
+                <input class="visually-hidden" type="text" name="select-city" id="select-city" value=" ">
+              </div>
               <div class="form__checkbox-wrapper">
                 <input class="form__checkbox field" type="checkbox" name="data-processing-consent" id="checkbox" required>
                 <label class="form__label form__label--checkbox" for="checkbox">Я согласен на обработку моих персональных данных</label>
@@ -474,14 +477,7 @@
           <input class="modal-form__field field" type="tel" name="phone" id="modal-phone" required>
           <label class="modal-form__label" for="modal-message">Ваше сообщение</label>
           <textarea class="modal-form__field field modal-form__textarea" name="message" id="modal-message"></textarea>
-          <label class="modal-form__label" for="modal-city">Выберите город</label>
-          <select class="modal-form__select field" name="city" id="modal-city" required>
-            <option value="" aria-label="Не выбрано.">&nbsp;</option>
-            <option value="saint-petersburg">Санкт-Петербург</option>
-            <option value="saint-petersburg">Санкт-Петербург</option>
-            <option value="saint-petersburg">Санкт-Петербург</option>
-            <option value="saint-petersburg">Санкт-Петербург</option>
-          </select>
+          <!-- select -->
           <div class="modal-form__checkbox-wrapper">
             <input class="modal-form__checkbox field" type="checkbox" name="data-processing-consent" id="modal-checkbox" required>
             <label class="modal-form__label modal-form__label--checkbox" for="modal-checkbox">Я согласен на обработку моих персональных данных</label>
