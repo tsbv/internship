@@ -56,17 +56,11 @@
   @media (hover: hover) {
     &:hover {
       border-color: $white;
-      &::after {
-        transform: scale(1.1);
-      }
     }
   }
 
   &:active {
     border-color: initial;
-    &::after {
-      transform: scale(0.9);
-    }
   }
 }
 
