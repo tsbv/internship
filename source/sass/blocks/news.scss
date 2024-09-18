@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 50px 45px 112px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 100px 112px;
+  }
 }
 
 .news__title {

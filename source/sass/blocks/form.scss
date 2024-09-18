@@ -10,6 +10,11 @@
     background-image: none;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 50px 100px;
+    background-image: none;
+  }
+
   &::before,
   &::after {
     content: "";

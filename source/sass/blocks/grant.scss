@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 120px 100px;
+    padding: 120px 100px 106px;
   }
 
   p {
@@ -175,7 +175,7 @@
       letter-spacing: 0.01em;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width: $desktop-width) {
       top: -16px;
       left: -21.6px;
     }
