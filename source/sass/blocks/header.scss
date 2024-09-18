@@ -22,6 +22,7 @@
   min-height: 54px;
   font-size: 14px;
   background-color: $white;
+  transition: background-color 0.4s ease;
 
   @media (min-width: $tablet-width) {
     padding: 4px 60px 5px 20px;
@@ -36,7 +37,7 @@
     mask-image: none;
     background-image: url("/__spritemap#sprite-burger-view");
     background-repeat: no-repeat;
-    transition: background-image 0.3s;
+    transition: background-image 0.4s;
   }
 
   &::after {
@@ -45,6 +46,7 @@
     height: 46px;
     top: 3px;
     right: 4px;
+    transition: transform 0.4s ease;
 
     @media (min-width: $tablet-width) {
       top: 4px;
@@ -54,11 +56,17 @@
   @media (hover: hover) {
     &:hover {
       border-color: $white;
+      &::after {
+        transform: scale(1.1);
+      }
     }
   }
 
   &:active {
     border-color: initial;
+    &::after {
+      transform: scale(0.9);
+    }
   }
 }
 
