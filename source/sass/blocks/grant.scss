@@ -7,6 +7,10 @@
     padding: 100px 45px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 120px 100px;
+  }
+
   p {
     margin: 0 0 30px;
     font-size: 14px;
@@ -20,8 +24,21 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin: 0;
       line-height: 26px;
     }
+  }
+
+  p:not(:first-of-type) {
+    margin: 10px 0 0;
+  }
+}
+
+.grant__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 498px);
+    gap: 138px;
   }
 }
 
@@ -43,6 +60,18 @@
       height: 375px;
       bottom: -415px;
     }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/grant/distance-desktop.png");
+      height: 363px;
+      bottom: 63px;
+    }
+  }
+}
+
+.grant__conditions {
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
   }
 }
 
@@ -69,6 +98,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    margin: 0 0 40px;
+    max-width: 373px;
     font-size: 32px;
     line-height: 36px;
   }
@@ -85,6 +117,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 15px 20px 14px;
+    max-width: 518px;
+    display: flex;
+    gap: 23px;
   }
 }
 
@@ -104,6 +144,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 30px 25px;
+    min-width: 478px;
     line-height: 26px;
   }
 
@@ -131,6 +173,11 @@
       left: -21px;
       font-size: 22px;
       letter-spacing: 0.01em;
+    }
+
+    @media (min-width:$desktop-width) {
+      top: -16px;
+      left: -21.6px;
     }
   }
 }
