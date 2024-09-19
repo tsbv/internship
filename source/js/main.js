@@ -4,5 +4,7 @@
 // import 'swiper/css';
 
 import { toggleBurgerHandler } from './burger-menu';
+import { setupSelectHandlers } from './select';
 
 toggleBurgerHandler(); // Инициализация бургер меню
+setupSelectHandlers(); // Кастомный селект

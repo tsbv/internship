@@ -43,7 +43,7 @@
     }
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     border-color: $white;
 
@@ -59,6 +59,10 @@
   }
 }
 
+.select__button--rotated::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
 .select__list {
   padding: 1px;
   display: none;
@@ -69,6 +73,10 @@
   border-radius: 8px;
   background-color: $white;
   z-index: 2;
+}
+
+.select__list--visible {
+  display: block;
 }
 
 .select__item {
@@ -102,4 +110,8 @@
   &:last-child {
     border-radius: 0 0 8px 8px;
   }
+}
+
+.select__input {
+  display: none;
 }
