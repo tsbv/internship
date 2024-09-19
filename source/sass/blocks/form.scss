@@ -199,13 +199,114 @@
   }
 }
 
-.form__checkbox-wrapper {
+.checkbox {
+  padding: 0 0 0 30px;
+  max-width: 188px;
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: $white;
+  cursor: pointer;
+
+  &:hover .checkbox__control,
+  &:focus-within .checkbox__control {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px $white;
+  }
+
+  &:hover .checkbox__input:checked + .checkbox__control {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px $white;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  &:focus-within .checkbox__input:checked + .checkbox__control {
+    outline: none;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px $white;
+
+    &::before {
+      background-color: $white;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0 10px 30px;
+    line-height: 100%;
+    max-width: none;
+  }
 }
 
-.form__checkbox {
+.checkbox__input {
   margin: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox__input--error {
+  border-color: $state-error;
+  background-color: rgba(255, 94, 102, 0.2);
+  opacity: 0.7;
+}
+
+.checkbox__control {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px $white;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.checkbox__input:checked + .checkbox__control {
+  background-color: $white;
+  box-shadow: 0 0 0 1px $primary;
+  border-radius: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $primary;
+    mask-image: url("/__spritemap#sprite-checked-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 10px 8px;
+  }
+}
+
+.checkbox__input:disabled + .checkbox__control {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 1px $white;
+  pointer-events: none;
+}
+
+.checkbox__input:disabled:checked + .checkbox__control {
+  background-color: $state-disabled;
+  box-shadow: 0 0 0 1px $state-disabled;
+
+  &::before {
+    background-color: $white;
+  }
+}
+
+.checkbox__input:disabled:checked:hover + .checkbox__control {
+  background-color: $state-disabled;
+  box-shadow: 0 0 0 1px $state-disabled;
 }

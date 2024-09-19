@@ -4,8 +4,9 @@
 
 .select__button {
   margin: 0 0 8px;
-  padding: 17px 20px;
+  padding: 17px 50px 17px 20px;
   width: 100%;
+  min-height: 52px;
   position: relative;
   font-family: $font-family;
   font-weight: 400;
