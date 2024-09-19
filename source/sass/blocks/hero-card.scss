@@ -103,7 +103,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40.5px 50px 30px;
+    padding: 39.5px 50px 30px;
     max-width: 968px;
     font-size: 54px;
     line-height: 62px;
@@ -159,7 +159,7 @@
 
     @media (min-width: $desktop-width) {
       width: 293px;
-      transform: translate(-50%, -58.2%);
+      transform: translate(-49.8%, -57.7%);
     }
   }
 
@@ -195,7 +195,7 @@
     min-height: 56px;
 
     &::before {
-      right: 22px;
+      right: 24px;
     }
 
     &::after {
@@ -206,6 +206,8 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 10px;
+    padding: 5px 5px 5px 30px;
+    min-width: 199px;
     min-height: 58px;
   }
 }
