@@ -22,7 +22,7 @@
   min-height: 54px;
   font-size: 14px;
   background-color: $white;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 
   @media (min-width: $tablet-width) {
     padding: 4px 60px 5px 20px;
@@ -33,11 +33,10 @@
     width: 18px;
     height: 8px;
     right: 18px;
-    background-color: transparent;
-    mask-image: none;
-    background-image: url("/__spritemap#sprite-burger-view");
-    background-repeat: no-repeat;
-    transition: background-image 0.3s;
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-burger-view");
+    mask-repeat: no-repeat;
+    transition: all 0.3s ease;
   }
 
   &::after {
@@ -46,7 +45,7 @@
     height: 46px;
     top: 3px;
     right: 4px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 
     @media (min-width: $tablet-width) {
       top: 4px;
@@ -55,12 +54,37 @@
 
   @media (hover: hover) {
     &:hover {
-      border-color: $white;
+      border-color: $primary;
+      color: $white;
+      background-color: $primary;
+
+      &::before {
+        background-color: $primary;
+      }
+
+      &::after {
+        background-color: $white;
+      }
     }
   }
 
   &:active {
     border-color: initial;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: $primary;
+    color: $white;
+    background-color: $primary;
+
+    &::before {
+      background-color: $primary;
+    }
+
+    &::after {
+      background-color: $white;
+    }
   }
 }
 
@@ -76,7 +100,9 @@
     width: 20px;
     height: 20px;
     right: 17px;
-    background-image: url("/__spritemap#sprite-burger-close-view");
+    background-color: $primary;
+    mask-image: url("/__spritemap#sprite-burger-close-view");
+    mask-repeat: no-repeat;
   }
 
   &::after {
