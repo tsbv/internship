@@ -16,6 +16,11 @@
   height: 26px;
   background-color: $primary;
   border-radius: 50%;
+  transition: background-color 0.3s ease;
+
+  &::before {
+    transition: background-color 0.3s ease;
+  }
 
   @media (min-width: $tablet-width) {
     width: 36px;
@@ -82,6 +87,27 @@
       width: 16px;
       height: 17px;
       mask-size: 16px 17px;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      &::before {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+
+  &:active {
+    background-color: $state-active;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $white;
+
+    &::before {
+      background-color: $primary;
     }
   }
 }
