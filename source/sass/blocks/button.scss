@@ -69,6 +69,18 @@
   }
 }
 
+.button__disabled {
+  border: 1px solid $state-disabled;
+  color: $state-disabled;
+  background-color: $state-disabled;
+  opacity: 0.6;
+  pointer-events: none;
+
+  &::after {
+    background-color: $state-disabled;
+  }
+}
+
 .button--circle {
   padding: 10px;
   position: relative;
