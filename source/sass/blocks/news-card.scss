@@ -310,3 +310,38 @@
     max-width: 244px;
   }
 }
+
+.news-card__link {
+  transition: background-color 0.3s ease;
+
+  &::before {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $white;
+
+      &::before {
+        background-color: $primary;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: rgba(49, 109, 194, 0.7);
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $primary;
+
+    &::before {
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+  }
+}
