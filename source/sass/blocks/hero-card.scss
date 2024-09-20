@@ -51,23 +51,43 @@
 .hero-card--internships {
   background-image: url("../../img/hero/hero-slide-1-mobile.jpg");
 
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/hero/hero-slide-1-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../../img/hero/hero-slide-1-tablet.jpg");
     background-position: top;
     background-size: 100%;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/hero/hero-slide-1-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../../img/hero/hero-slide-1-desktop.jpg");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/hero/hero-slide-1-desktop@2x.jpg");
+    }
   }
 }
 
 .hero-card--volunteer {
   background-image: url("../../img/hero/hero-slide-2-mobile.jpg");
+
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/hero/hero-slide-2-mobile@2x.jpg");
+  }
 }
 
 .hero-card--abroad {
   background-image: url("../../img/hero/hero-slide-3-mobile.jpg");
+
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/hero/hero-slide-3-mobile@2x.jpg");
+  }
 }
 
 .hero-card__descr {

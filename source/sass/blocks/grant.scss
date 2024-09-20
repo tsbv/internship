@@ -56,16 +56,28 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/grant/distance-mobile@2x.png");
+    }
+
     @media (min-width: $tablet-width) {
       background-image: url("../../img/grant/distance-tablet.png");
       height: 375px;
       bottom: -415px;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/grant/distance-tablet@2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../../img/grant/distance-desktop.png");
       height: 363px;
       bottom: 63px;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../img/grant/distance-desktop@2x.png");
+      }
     }
   }
 }

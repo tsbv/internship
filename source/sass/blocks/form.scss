@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (resolution >= 2dppx) {
+    background-image: url("../../img/form/form-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 50px 58px;
     background-image: none;
@@ -42,10 +46,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/form/form-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../../img/form/form-desktop.png");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/form/form-desktop@2x.png");
+    }
   }
 }
 
