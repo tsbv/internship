@@ -1,56 +1,67 @@
 .accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding: 22px 17px;
+  min-height: 84px;
+  border: 2px solid $primary;
+  border-radius: 14px;
+
+  p {
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: $beige;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.3s ease-out;
+    box-sizing: content-box;
+  }
 
   span {
-    max-width: 184px;
-    display: inline-block;
+    max-width: 187px;
+    display: block;
     font-size: 16px;
     line-height: 18px;
     color: $primary;
   }
+}
+
+.accordion.accordion--open {
+  background-color: $primary;
+
+  span {
+    color: $white;
+  }
 
   p {
-    padding: 0 15px 22px;
-    display: none;
-    font-size: 14px;
-    line-height: 20px;
-    color: $beige;
+    color: $white;
+    margin-top: 20px;
+    opacity: 1;
   }
 }
 
-.accordion__item {
-  border: 2px solid $primary;
-  border-radius: 14px;
-}
-
-.accordion__item-button {
-  padding: 22px 15px 21px;
-  width: 100%;
+.accordion__control {
+  padding: 0;
   position: relative;
-  display: block;
+  width: 100%;
+  background-color: transparent;
   text-align: left;
+  cursor: pointer;
 }
 
-.accordion__item:nth-child(4),
-.accordion__item:nth-child(5) {
-  .accordion__item-button {
-    padding: 20px 15px 19px;
-  }
-}
-
-.accordion__item-icon {
+.accordion__icon {
   position: absolute;
   width: 40px;
   height: 40px;
   top: 50%;
-  right: 15px;
+  right: 0;
   padding: 10px;
   display: inline-block;
   transform: translateY(-50%);
   border-radius: 30px;
   background-color: $primary;
+  transition: transform 0.3s ease-out;
 
   &::before {
     content: "";
@@ -77,24 +88,14 @@
   }
 }
 
-.accordion__item-button.accordion__item-button--active {
-  .accordion__item-icon {
-    background-color: $white;
-  }
+.accordion--open .accordion__icon {
+  background-color: $white;
 
-  .accordion__item-icon::before {
+  &::before {
     background-color: $primary;
   }
 
-  .accordion__item-icon::after {
+  &::after {
     width: 0;
-  }
-
-  + p {
-    margin: 0;
-    padding: 0 15px 20px;
-    opacity: 1;
-    transition: all 200ms linear;
-    will-change: opacity, max-height, margin;
   }
 }
