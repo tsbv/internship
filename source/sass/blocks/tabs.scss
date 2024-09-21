@@ -10,12 +10,13 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 30px;
     padding-left: 2px;
-    gap: 10px;
+    gap: 6px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 40px;
     padding: 0 260px;
+    gap: 10px;
   }
 }
 
