@@ -42,7 +42,7 @@
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-      right: 22px;
+      right: 21px;
     }
   }
 
@@ -52,19 +52,14 @@
     width: 34px;
     height: 34px;
     padding: 12px;
-    top: 4px;
-    right: 4px;
+    top: 3px;
+    right: 3px;
     background-color: $primary;
     border-radius: 44px;
 
     @media (min-width: $tablet-width) {
       width: 46px;
       height: 46px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 5px;
-      right: 5px;
     }
   }
 }

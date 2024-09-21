@@ -107,7 +107,7 @@
           </li>
         </ul>
       </section>
-      <section class="about" data-test="about">
+      <section class="about" data-test="about" id="about">
         <div class="container about__container">
           <div class="about__description">
             <h2 class="title about__title">О проекте «Стажировка»</h2>
@@ -136,7 +136,7 @@
           </ul>
         </div>
       </section>
-      <section class="programs" data-test="programs">
+      <section class="programs" data-test="programs" id="programs">
         <div class="container programs__container">
           <h2 class="title programs__title">Программы</h2>
           <a class="programs__link button button--primary" href="#">Все программы</a>
@@ -177,7 +177,7 @@
           </ul>
         </div>
       </section>
-      <section class="grant" data-test="grant">
+      <section class="grant" data-test="grant" id="grant">
         <div class="container grant__container">
           <div class="grant__descr">
             <h2 class="title grant__title">Как поехать</h2>
@@ -202,7 +202,7 @@
           </div>
         </div>
       </section>
-      <section class="news" data-test="news">
+      <section class="news" data-test="news" id="news">
         <div class="container">
           <h2 class="title news__title">Новости и материалы</h2>
           <ul class="tabs reset-list">
@@ -316,7 +316,7 @@
           </ul>
         </div>
       </section>
-      <section class="reviews" data-test="reviews">
+      <section class="reviews" data-test="reviews" id="reviews">
         <div class="container">
           <h2 class="title reviews__title">Отзывы</h2>
           <ul class="reviews__list reset-list">
@@ -377,7 +377,7 @@
           </ul>
         </div>
       </section>
-      <section class="contacts" data-test="contacts">
+      <section class="contacts" data-test="contacts" id="contacts">
         <div class="container contacts__container">
           <h2 class="title contacts__title">Контакты</h2>
           <span class="contacts__name contacts__name--office">Центральный офис</span>
@@ -403,14 +403,14 @@
           <div class="form__wrapper">
             <h2 class="title form__title">Напишите нам</h2>
             <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-            <form class="form__element" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="form__label" for="name">Имя</label>
-              <input class="form__field field" type="text" name="name" id="name" required>
-              <label class="form__label" for="phone">Телефон</label>
-              <input class="form__field field" type="tel" name="phone" id="phone" required>
-              <label class="form__label" for="message">Ваше сообщение</label>
-              <textarea class="form__field field form__textarea" name="message" id="message"></textarea>
-              <label class="form__label" for="select-city">Выберите город</label>
+            <form class="form-element" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="form-element__label" for="name">Имя</label>
+              <input class="form-element__field field" type="text" name="name" id="name" required>
+              <label class="form-element__label" for="phone">Телефон</label>
+              <input class="form-element__field field" type="tel" name="phone" id="phone" required>
+              <label class="form-element__label" for="message">Ваше сообщение</label>
+              <textarea class="form-element__field field form-element__textarea" name="message" id="message"></textarea>
+              <label class="form-element__label" for="select-city">Выберите город</label>
               <div class="select">
                 <button class="select__button button" type="button" aria-label="Выберите город."></button>
                 <ul class="select__list reset-list" role="listbox">
@@ -426,7 +426,7 @@
                 Я согласен на обработку моих персональных данных
                 <span class="checkbox__control"></span>
               </label>
-              <button class="form__button button button--primary" type="submit">Отправить</button>
+              <button class="form-element__button button button--primary" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -441,22 +441,22 @@
         </span>
         <ul class="footer__menu reset-list">
           <li class="footer__item">
-            <a class="footer__link" href="#">О проекте</a>
+            <a class="footer__link" href="#about">О проекте</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Программы</a>
+            <a class="footer__link" href="#programs">Программы</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Как поехать</a>
+            <a class="footer__link" href="#grant">Как поехать</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Отзывы</a>
+            <a class="footer__link" href="#reviews">Отзывы</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Новости</a>
+            <a class="footer__link" href="#news">Новости</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Контакты</a>
+            <a class="footer__link" href="#contacts">Контакты</a>
           </li>
         </ul>
         <ul class="social footer__social reset-list">
@@ -473,14 +473,13 @@
         <button class="button modal__close-button" type="button" aria-label="Закрыть модальное окно."></button>
         <h2 class="modal__title">Напишите нам</h2>
         <p class="modal__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="modal-form__label" for="modal-name">Имя</label>
-          <input class="modal-form__field field" type="text" name="name" id="modal-name" required>
-          <label class="modal-form__label" for="modal-phone">Телефон</label>
-          <input class="modal-form__field field" type="tel" name="phone" id="modal-phone" required>
-          <label class="modal-form__label" for="modal-select-city">Ваше сообщение</label>
-          <textarea class="modal-form__field field modal-form__textarea" name="message" id="modal-message"></textarea>
-          <div class="select">
+        <form class="form-element form-element--dark" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form-element__label" for="user-name">Имя</label>
+          <input class="form-element__field field" type="text" name="name" id="user-name" required>
+          <label class="form-element__label" for="user-phone">Телефон</label>
+          <input class="form-element__field field" type="tel" name="phone" id="user-phone" required>
+          <label class="form-element__label" for="city">Выберите город</label>
+          <div class="select select--dark">
             <button class="select__button button" type="button" aria-label="Выберите город."></button>
             <ul class="select__list reset-list" role="listbox">
               <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
@@ -488,13 +487,14 @@
               <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
               <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
             </ul>
-            <input class="select__input visually-hidden" type="text" name="select-city" id="modal-select-city" value=" ">
+            <input class="select__input visually-hidden" type="text" name="city" id="city" value=" ">
           </div>
-          <div class="modal-form__checkbox-wrapper">
-            <input class="modal-form__checkbox field" type="checkbox" name="data-processing-consent" id="modal-checkbox" required>
-            <label class="modal-form__label modal-form__label--checkbox" for="modal-checkbox">Я согласен на обработку моих персональных данных</label>
-          </div>
-          <button class="modal-form__button button button--primary" type="submit">Отправить</button>
+          <label class="checkbox checkbox--dark">
+            <input class="checkbox__input field visually-hidden" type="checkbox" name="data-processing-consent" required>
+            Я согласен на обработку моих персональных данных
+            <span class="checkbox__control"></span>
+          </label>
+          <button class="form-element__modal-button button button--primary" type="submit">Отправить</button>
         </form>
       </div>
     </div>

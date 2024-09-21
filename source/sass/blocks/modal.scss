@@ -6,6 +6,92 @@
   top: 0;
   left: 0;
   background-color: $dark-overlay;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
+}
+
+.modal__wrapper {
+  cursor: auto;
+}
+
+.modal__contact {
+  margin: 23px auto 0;
+  padding: 38px 15px 40px;
+  position: relative;
+  max-width: 290px;
+  background-color: $white;
+  border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 204px auto 0;
+    padding: 56px 80px 60px;
+    max-width: 510px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 90px auto 0;
+    padding: 53px 80px 60px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: $primary;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 16px;
+    font-size: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 14px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.modal__text {
+  margin: 0 auto 25px;
+  max-width: 220px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $text;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 33px;
+    max-width: 350px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 29px;
+    line-height: 26px;
+  }
+}
+
+.modal__close-button {
+  padding: 20px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: $primary;
+  mask-image: url("/__spritemap#sprite-modal-close-view");
+  mask-repeat: no-repeat;
+  mask-size: 14px 14px;
+  mask-position: center center;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    top: 21px;
+    right: 21px;
+    mask-size: 20px 20px;
+  }
 }
