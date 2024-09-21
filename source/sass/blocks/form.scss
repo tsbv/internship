@@ -42,6 +42,7 @@
 
 .form__container {
   @media (min-width: $tablet-width) {
+    background-color: #a3aca5;
     background-image: url("../../img/form/form-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;

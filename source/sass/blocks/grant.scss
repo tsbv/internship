@@ -52,9 +52,11 @@
     height: 200px;
     bottom: -230px;
     left: 0;
+    background-color: #3c5374;
     background-image: url("../../img/grant/distance-mobile.png");
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 16px;
 
     @media (resolution >= 2dppx) {
       background-image: url("../../img/grant/distance-mobile@2x.png");

@@ -5,6 +5,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  background-color: #dacaaf;
+  border-radius: 12px;
 
   &::before {
     content: "";
