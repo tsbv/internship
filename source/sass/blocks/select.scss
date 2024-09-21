@@ -14,6 +14,7 @@
 
   &::after {
     color: $text;
+    background-color: $text;
     mask-size: 16px 9px;
   }
 
@@ -70,7 +71,7 @@
     top: 50%;
     right: 19px;
     transform: translateY(-50%);
-    background-color: $text;
+    background-color: $white;
     mask-image: url("/__spritemap#sprite-arrow-down-view");
     mask-repeat: no-repeat;
     mask-position: center;
