@@ -2,7 +2,10 @@
   margin: 0 0 24px;
   display: flex;
   gap: 12px;
-  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 30px;
@@ -16,8 +19,12 @@
   }
 }
 
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
 .tabs__button {
-  padding: 13px 14px 9px;
+  padding: 11px 12px 9px;
   font-weight: 500;
   font-size: 12px;
   line-height: 100%;
@@ -26,6 +33,9 @@
   text-align: center;
   color: $primary;
   opacity: 0.6;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: opacity 0.3s, border-color 0.3s;
 
   @media (min-width: $tablet-width) {
     padding: 16px 20px;
@@ -37,17 +47,32 @@
   }
 
   &--active {
-    padding: 11px 15px 9px 14px;
     opacity: 1;
-    box-shadow: inset 0 0 0 2px $primary;
+    border-color: $primary;
     border-radius: 20px;
 
     @media (min-width: $tablet-width) {
-      padding: 16px 22px;
+      padding: 16px 20px;
     }
 
     @media (min-width: $desktop-width) {
       padding: 16px 35px;
+    }
+  }
+}
+
+.tabs__item:nth-child(1) {
+  .tabs__button {
+    padding: 11px 15px 9px 14px;
+
+    @media (min-width: $tablet-width) {
+      padding: 16px 22px;
+    }
+  }
+
+  .tabs__button--active {
+    @media (min-width: $tablet-width) {
+      padding: 16px 22px;
     }
   }
 }
