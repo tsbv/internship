@@ -2,50 +2,6 @@
   position: relative;
 }
 
-.select--dark .select__button {
-  min-height: 44px;
-  color: $text;
-  border-color: rgba(72, 72, 72, 0.3);
-
-  @media (min-width: $tablet-width) {
-    margin-top: 2px;
-    min-height: 50px;
-  }
-
-  &::after {
-    color: $text;
-    background-color: $text;
-    mask-size: 16px 9px;
-  }
-
-  @media (hover: hover) {
-    &:hover {
-      border-color: $text;
-    }
-  }
-
-  &:focus-visible {
-    outline: none;
-    border-color: $text;
-
-    &::after {
-      transform: rotate(-180deg) translateY(50%);
-    }
-  }
-
-  &:active {
-    &::after {
-      transform: rotate(-180deg) translateY(50%);
-    }
-  }
-}
-
-.select--dark.select__list {
-  padding: 0;
-  border: 1px solid $text;
-  border-radius: 8px;
-}
-
 .select__button {
   margin: 0 0 7px;
   padding: 17px 50px 17px 20px;
@@ -105,8 +61,60 @@
   }
 }
 
+.select__button--open {
+  border-color: $white;
+}
+
 .select__button--rotated::after {
   transform: translateY(-50%) rotate(180deg);
+}
+
+.select--dark .select__button {
+  min-height: 44px;
+  color: $text;
+  border-color: rgba(72, 72, 72, 0.3);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    min-height: 50px;
+  }
+
+  &::after {
+    color: $text;
+    background-color: $text;
+    mask-size: 16px 9px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: $text;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: $text;
+
+    &::after {
+      transform: rotate(-180deg) translateY(50%);
+    }
+  }
+
+  &:active {
+    &::after {
+      transform: rotate(-180deg) translateY(50%);
+    }
+  }
+}
+
+.select--dark .select__button--open {
+  border-color: $text;
+}
+
+.select--dark .select__list {
+  padding: 0;
+  border: 1px solid $text;
+  border-radius: 8px;
 }
 
 .select__list {

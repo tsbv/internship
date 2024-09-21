@@ -9,6 +9,7 @@ const setupSelectHandlers = () => {
     const toggleSelect = () => { // Переключаем видимость списка
       selectListNode.classList.toggle('select__list--visible');
       selectButtonNode.classList.toggle('select__button--rotated');
+      selectButtonNode.classList.toggle('select__button--open');
     };
     const handleOutsideClick = (event) => { // Обрабатываем клик вне селекта
       if (!selectNode.contains(event.target) && isListVisible()) {
