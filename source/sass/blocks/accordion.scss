@@ -4,6 +4,7 @@
   border: 2px solid $primary;
   border-radius: 14px;
   cursor: pointer;
+  background-color: transparent;
 
   p {
     margin: 0;
@@ -17,6 +18,10 @@
     will-change: max-height;
     transition: all 0.3s ease-out;
     box-sizing: content-box;
+
+    @media (min-width: $desktop-width) {
+      max-width: 800px;
+    }
   }
 
   span {
@@ -25,6 +30,46 @@
     font-size: 16px;
     line-height: 18px;
     color: $primary;
+
+    @media (min-width: $tablet-width) {
+      max-width: 430px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 510px;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover,
+    &:has(:focus-visible) {
+      background-color: $white;
+
+      .accordion__icon {
+        background-color: $white;
+        box-shadow: 0 0 0 1px $primary;
+      }
+
+      .accordion__icon::before,
+      .accordion__icon::after {
+        background-color: $primary;
+      }
+    }
+  }
+
+  &:active {
+    span {
+      color: $state-active;
+    }
+
+    .accordion__icon {
+      background-color: $state-active;
+    }
+
+    .accordion__icon::before,
+    .accordion__icon::after {
+      background-color: $white;
+    }
   }
 }
 
@@ -36,7 +81,7 @@
   }
 
   p {
-    color: $white;
+    color: $beige;
     margin-top: 20px;
     opacity: 1;
   }
@@ -49,6 +94,39 @@
   background-color: transparent;
   text-align: left;
   cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+.accordion:has(.accordion__control:focus-visible),
+.accordion.accordion--open:hover {
+  outline: none;
+
+  .accordion__icon {
+    background-color: $primary;
+    box-shadow: 0 0 0 1px $white;
+
+    &::before,
+    &::after {
+      background-color: $white;
+    }
+  }
+}
+
+.accordion.accordion--open:active {
+  background-color: $state-active;
+
+  .accordion__icon {
+    background-color: $white;
+
+    &::before,
+    &::after {
+      background-color: $state-active;
+    }
+  }
 }
 
 .accordion__icon {
