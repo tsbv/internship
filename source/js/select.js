@@ -1,4 +1,4 @@
-const setupSelectHandlers = () => {
+const setupSelectHandler = () => {
   const selectNodes = document.querySelectorAll('.select');
   selectNodes.forEach((selectNode) => { // Находим необходимые элементы внутри селекта
     const selectButtonNode = selectNode.querySelector('.select__button');
@@ -65,4 +65,4 @@ const setupSelectHandlers = () => {
   });
 };
 
-export { setupSelectHandlers };
+export { setupSelectHandler };
