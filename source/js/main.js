@@ -8,8 +8,11 @@ import { setupSelectHandlers } from './select';
 import { accordionHandler } from './accordion';
 import { navSubmenuHandler } from './submenu';
 import { setupTabsHandler } from './tabs';
+import { initializeModal } from './modal';
+
 toggleBurgerHandler(); // Инициализация бургер меню
 setupSelectHandlers(); // Кастомный селект
 accordionHandler(); // Инициализация аккордеонов
 navSubmenuHandler (); // Инициализация подменю
 setupTabsHandler(); // Инициализация табов
+initializeModal(); // Инициализация модального окна
