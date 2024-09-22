@@ -4,15 +4,17 @@
 // import 'swiper/css';
 
 import { toggleBurgerHandler } from './burger-menu';
-import { setupSelectHandlers } from './select';
+import { setupSelectHandler } from './select';
 import { accordionHandler } from './accordion';
 import { navSubmenuHandler } from './submenu';
 import { setupTabsHandler } from './tabs';
-import { initializeModal } from './modal';
+import { initializeModalHandler } from './modal';
+import { numberMaskHandler } from './phone-input';
 
 toggleBurgerHandler(); // Инициализация бургер меню
-setupSelectHandlers(); // Кастомный селект
+setupSelectHandler(); // Кастомный селект
 accordionHandler(); // Инициализация аккордеонов
 navSubmenuHandler (); // Инициализация подменю
 setupTabsHandler(); // Инициализация табов
-initializeModal(); // Инициализация модального окна
+initializeModalHandler(); // Инициализация модального окна
+numberMaskHandler(); // Инициализация маски инпута телефона
