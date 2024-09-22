@@ -10,6 +10,7 @@ import { navSubmenuHandler } from './submenu';
 import { setupTabsHandler } from './tabs';
 import { initializeModalHandler } from './modal';
 import { numberMaskHandler } from './phone-input';
+import { setupFormValidation } from './form-validation';
 
 toggleBurgerHandler(); // Инициализация бургер меню
 setupSelectHandler(); // Кастомный селект
@@ -18,3 +19,4 @@ navSubmenuHandler (); // Инициализация подменю
 setupTabsHandler(); // Инициализация табов
 initializeModalHandler(); // Инициализация модального окна
 numberMaskHandler(); // Инициализация маски инпута телефона
+setupFormValidation(); // Валидация формы

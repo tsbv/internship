@@ -186,6 +186,18 @@
   }
 }
 
+.form-element--light-error {
+  outline: none;
+  border: 1px solid $state-error;
+  background-color: rgba(255, 94, 102, 0.2);
+}
+
+.form-element--dark .form-element--dark-error {
+  outline: none;
+  border: 1px solid $state-error;
+  background-color: rgba(255, 94, 102, 0.2);
+}
+
 .form-element__field {
   margin: 0 0 8px;
   padding: 10px 20px;

@@ -5,3 +5,9 @@
   border-radius: 8px;
   background-color: transparent;
 }
+
+.field--error {
+  outline: none;
+  border-color: $state-error;
+  background-color: rgba(255, 94, 102, 0.2);
+}
