@@ -1,4 +1,4 @@
-const initializeModal = () => {
+const initializeModalHandler = () => {
   const modalNode = document.querySelector('.modal');
   const modalWrapperNode = document.querySelector('.modal__wrapper');
   const modalButtonNode = document.querySelector('.about__button');
@@ -17,4 +17,4 @@ const initializeModal = () => {
   );
 };
 
-export { initializeModal };
+export { initializeModalHandler };
