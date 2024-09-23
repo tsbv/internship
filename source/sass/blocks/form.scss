@@ -173,8 +173,9 @@
   gap: 12px;
   font-size: 12px;
   line-height: 14px;
-  color: $beige;
-  opacity: 0.8;
+  color: #cbd4e1;
+  transition: color 0.3s ease;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -183,6 +184,28 @@
 
   @media (min-width: $desktop-width) {
     line-height: 18px;
+  }
+
+  &:has(.form-element__field:focus-visible) {
+    color: $beige;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $beige;
+
+      .form-element__field {
+        border-color: $white;
+      }
+    }
+  }
+
+  &:active {
+    color: $beige;
+
+    .form-element__field {
+      border-color: $white;
+    }
   }
 }
 
@@ -204,6 +227,17 @@
   font-size: 14px;
   line-height: 100%;
   color: $beige;
+  transition: color 0.3s ease, border-color 0.3s ease;
+
+  &:focus-visible {
+    outline: none;
+    border-color: $white;
+  }
+
+  &:disabled {
+    background-color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+  }
 }
 
 .form-element__textarea {
