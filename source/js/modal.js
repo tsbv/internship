@@ -1,6 +1,6 @@
 const initializeModalHandler = () => {
   const modalNode = document.querySelector('.modal');
-  const modalWrapperNode = document.querySelector('.modal__wrapper');
+  const modalFormNode = document.querySelector('.modal__form');
   const modalButtonNode = document.querySelector('.about__button');
   const closeModalNode = document.querySelector('.modal__close-button');
   const toggleModal = (display) => () => {
@@ -11,7 +11,7 @@ const initializeModalHandler = () => {
   modalButtonNode.addEventListener('click', openModal);
   closeModalNode.addEventListener('click', closeModal);
   modalNode.addEventListener('click', (event) => event.target === modalNode && closeModal());
-  modalWrapperNode.addEventListener('click', (event) => event.stopPropagation());
+  modalFormNode.addEventListener('click', (event) => event.stopPropagation());
   document.addEventListener('keydown', (event) =>
     event.key === 'Escape' && modalNode.style.display === 'block' && closeModal()
   );
