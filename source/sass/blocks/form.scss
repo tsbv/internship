@@ -191,7 +191,8 @@
   }
 
   @media (hover: hover) {
-    &:hover {
+    &:hover,
+    &:focus-within {
       color: $beige;
 
       .form-element__field {
