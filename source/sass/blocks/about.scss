@@ -56,6 +56,28 @@
       }
     }
   }
+
+  h3 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $primary;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 30px;
+      font-size: 28px;
+      line-height: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      font-size: 32px;
+      line-height: 36px;
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
 }
 
 .about__title {
@@ -74,26 +96,6 @@
     margin: 0;
     font-size: 50px;
     line-height: 100%;
-  }
-}
-
-.about__subtitle {
-  margin: 0 0 20px;
-  font-size: 18px;
-  line-height: 22px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 30px;
-    font-size: 28px;
-    line-height: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    font-size: 32px;
-    line-height: 36px;
-    grid-column: 2;
-    grid-row: 1;
   }
 }
 
