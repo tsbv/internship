@@ -107,6 +107,8 @@
 }
 
 .news-card--adventures {
+  min-height: 240px;
+
   .news-card__date {
     padding: 13px 13px 5px 0;
 
@@ -201,7 +203,7 @@
 }
 
 .news-card__date {
-  padding: 10px 12px 1px 0;
+  padding: 10px 13px 3px 0px;
   position: relative;
   font-size: 12px;
   line-height: 100%;
@@ -242,8 +244,8 @@
 }
 
 .news-card__title {
-  margin: 0;
-  padding: 12px 18px 5px 0;
+  margin: 2px 0 0;
+  padding: 10px 18px 4px 0;
   position: relative;
   max-width: 200px;
   font-weight: 400;
@@ -280,7 +282,7 @@
 }
 
 .news-card__angle {
-  padding: 12px 10px 10px 0;
+  padding: 13px 10px 9px 0;
   position: relative;
   max-width: 263px;
   display: flex;
@@ -314,6 +316,7 @@
 }
 
 .news-card__link {
+  margin: 0 0 2px;
   transition: background-color 0.3s ease;
 
   &::before {

@@ -189,6 +189,7 @@
 }
 
 .program__link {
+  margin: 0 0 3px;
   padding: 10px;
   position: relative;
   width: 30px;
@@ -206,6 +207,6 @@
     mask-image: url("/__spritemap#sprite-arrow-link-view");
     mask-repeat: no-repeat;
     mask-position: center;
-    mask-size: 10px 10px;
+    mask-size: 8px 8px;
   }
 }

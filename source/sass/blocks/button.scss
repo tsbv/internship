@@ -34,7 +34,7 @@
     width: 8px;
     height: 8px;
     top: 50%;
-    right: 16px;
+    right: 17px;
     transform: translateY(-50%);
     background-color: $white;
     mask-image: url("/__spritemap#sprite-arrow-link-view");
@@ -52,14 +52,16 @@
     width: 34px;
     height: 34px;
     padding: 12px;
-    top: 3px;
-    right: 3px;
+    top: 4px;
+    right: 4px;
     background-color: $primary;
     border-radius: 44px;
 
     @media (min-width: $tablet-width) {
       width: 46px;
       height: 46px;
+      top: 3px;
+      right: 3px;
     }
   }
 }
@@ -94,6 +96,6 @@
     mask-image: url("/__spritemap#sprite-arrow-link-view");
     mask-repeat: no-repeat;
     mask-position: center;
-    mask-size: 10px 10px;
+    mask-size: 8px 8px;
   }
 }

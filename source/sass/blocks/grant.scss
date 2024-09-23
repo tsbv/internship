@@ -60,6 +60,7 @@
 
     @media (resolution >= 2dppx) {
       background-image: url("../../img/grant/distance-mobile@2x.png");
+      background-size: cover;
     }
 
     @media (min-width: $tablet-width) {
