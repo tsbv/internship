@@ -109,6 +109,10 @@
 .news-card--adventures {
   min-height: 240px;
 
+  @media (min-width: $tablet-width) {
+    min-height: 100%;
+  }
+
   .news-card__date {
     padding: 13px 13px 5px 0;
 
@@ -267,6 +271,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 11px 18px 5px 0;
     max-width: 207px;
     font-size: 20px;

@@ -47,10 +47,12 @@
   transform: translateX(-8px);
 
   @media (min-width: $tablet-width) {
+    max-width: 678px;
     gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1240px;
     gap: 32px;
   }
 }
