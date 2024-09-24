@@ -127,6 +127,7 @@
     height: 10px;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     background-color: $primary;
     mask-image: url("/__spritemap#sprite-checked-view");
     mask-repeat: no-repeat;
