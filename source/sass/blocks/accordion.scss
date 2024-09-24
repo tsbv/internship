@@ -6,6 +6,12 @@
   cursor: pointer;
   background-color: transparent;
 
+  @media (min-width: $tablet-width) {
+    padding: 37px 30px;
+    min-height: 104px;
+    align-content: center;
+  }
+
   p {
     margin: 0;
     padding: 0;
@@ -18,6 +24,11 @@
     will-change: max-height;
     transition: all 0.3s ease-out;
     box-sizing: content-box;
+
+    @media (min-width: $tablet-width) {
+      max-width: 600px;
+      font-size: 16px;
+    }
 
     @media (min-width: $desktop-width) {
       max-width: 800px;
@@ -32,16 +43,29 @@
     color: $primary;
 
     @media (min-width: $tablet-width) {
-      max-width: 430px;
+      max-width: 485px;
+      font-size: 22px;
+      line-height: 26px;
     }
 
     @media (min-width: $desktop-width) {
       max-width: 510px;
+      font-size: 28px;
+      line-height: 34px;
     }
   }
 
   &:nth-child(n+4) {
     padding: 20px 15px 18px;
+
+    @media (min-width: $tablet-width) {
+      padding: 30px;
+
+      .accordion__icon {
+        top: 0;
+        transform: none;
+      }
+    }
   }
 
   @media (hover: hover) {
@@ -80,13 +104,17 @@
 .accordion.accordion--open {
   background-color: $primary;
 
+  @media (min-width: $tablet-width) {
+    padding: 37px 30px 30px;
+  }
+
   span {
     color: $white;
   }
 
   p {
     color: $beige;
-    margin-top: 20px;
+    margin-top: 27px;
     opacity: 1;
   }
 }

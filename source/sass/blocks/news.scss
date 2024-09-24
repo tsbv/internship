@@ -49,6 +49,7 @@
   @media (min-width: $tablet-width) {
     max-width: 678px;
     gap: 30px;
+    transform: none;
   }
 
   @media (min-width: $desktop-width) {

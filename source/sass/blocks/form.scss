@@ -293,8 +293,18 @@
   border-color: $white;
 
   @media (min-width: $tablet-width) {
-    margin: 6px 0 0;
+    margin: 20px 0 0;
+    padding: 6px 70px 5px 20px;
     max-width: 352px;
+
+    &::before {
+      right: 23px;
+    }
+
+    &::after {
+      top: 4px;
+      right: 4px;
+    }
   }
 
   @media (min-width: $desktop-width) {

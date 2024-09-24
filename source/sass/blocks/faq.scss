@@ -9,6 +9,10 @@
 .faq__title {
   margin: 0 0 29px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px;
+  }
 }
 
 .faq__list {

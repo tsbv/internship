@@ -12,11 +12,11 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 8px 0 8px 30px;
+    padding: 12px 0 10px 30px;
     max-width: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 10px 0 10px 30px;
   }
 
@@ -43,6 +43,12 @@
     &::before {
       background-color: $white;
     }
+  }
+}
+
+.checkbox__break {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

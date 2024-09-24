@@ -2,7 +2,7 @@
   padding: 56px 15px 50px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 45px;
+    padding: 50px 0 112px 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,8 +10,18 @@
   }
 }
 
+.reviews__container {
+  @media (min-width: $tablet-width) {
+    max-width: none;
+  }
+}
+
 .reviews__title {
   margin: 0 0 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 45px;
@@ -21,8 +31,11 @@
 
 .reviews__list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+  }
 
   @media (min-width: $desktop-width) {
     gap: 32px;

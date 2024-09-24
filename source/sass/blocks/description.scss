@@ -7,13 +7,13 @@
   grid-column: 1 / -1;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 auto;
-    padding: 0 0 30px;
+    margin: 0 0 30px auto;
+    padding: 0 0 0 20px;
     grid-template-columns: 126px 78px;
     grid-column: 3;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 0 0 92px;
   }
 }
