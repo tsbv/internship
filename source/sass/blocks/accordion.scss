@@ -1,5 +1,5 @@
 .accordion {
-  padding: 22px 17px;
+  padding: 22px 15px 20px;
   min-height: 84px;
   border: 2px solid $primary;
   border-radius: 14px;
@@ -38,6 +38,10 @@
     @media (min-width: $desktop-width) {
       max-width: 510px;
     }
+  }
+
+  &:nth-child(n+4) {
+    padding: 20px 15px 18px;
   }
 
   @media (hover: hover) {

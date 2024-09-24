@@ -3,10 +3,12 @@
   position: relative;
   background-image: url("../../img/form/form-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position: center 40px;
 
   @media (resolution >= 2dppx) {
     background-image: url("../../img/form/form-mobile@2x.png");
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
@@ -41,7 +43,10 @@
 }
 
 .form__container {
+  max-width: 300px;
+
   @media (min-width: $tablet-width) {
+    max-width: 652px;
     background-color: #a3aca5;
     background-image: url("../../img/form/form-tablet.png");
     background-repeat: no-repeat;
@@ -54,6 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1240px;
     background-image: url("../../img/form/form-desktop.png");
 
     @media (resolution >= 2dppx) {
@@ -63,7 +69,7 @@
 }
 
 .form__wrapper {
-  margin: 43px auto 40px;
+  margin: 40px auto;
   padding: 15px 15px 27px;
   max-width: 300px;
   background-color: $primary;
@@ -242,9 +248,13 @@
 }
 
 .form-element__textarea {
-  min-height: 88px;
+  min-height: 94px;
   width: 100%;
   resize: vertical;
+
+  @media (min-width: $tablet-width) {
+    min-height: 88px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 5px;
@@ -273,8 +283,11 @@
 }
 
 .form-element__button {
-  margin: 20px 0 0;
+  margin: 7px 0 0;
+  padding: 6px 58px 5px 20px;
+  max-width: 260px;
   width: 100%;
+  text-align: center;
   background-color: transparent;
   color: $white;
   border-color: $white;

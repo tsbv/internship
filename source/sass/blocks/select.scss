@@ -6,6 +6,7 @@
   margin: 0 0 7px;
   padding: 17px 50px 17px 20px;
   width: 100%;
+  max-width: 260px;
   min-height: 52px;
   position: relative;
   font-family: $font-family;
@@ -25,7 +26,7 @@
     width: 16px;
     height: 16px;
     top: 50%;
-    right: 19px;
+    right: 20px;
     transform: translateY(-50%);
     background-color: $white;
     mask-image: url("/__spritemap#sprite-arrow-down-view");
@@ -36,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    max-width: none;
     min-height: 52px;
   }
 

@@ -1,5 +1,5 @@
 .contacts {
-  padding: 76px 15px 75px;
+  padding: 76px 15px 70px;
   background-color: $primary;
 
   @media (min-width: $tablet-width) {
@@ -40,7 +40,7 @@
 }
 
 .contacts__name {
-  margin: 0 0 14px;
+  margin: 0 0 13px;
   display: block;
   font-size: 12px;
   line-height: 100%;
@@ -165,17 +165,18 @@
 }
 
 .contacts__map-wrapper {
+  margin: 8px 0 0;
   padding: 30px 0 0;
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
-    margin-top: 6px;
+    margin: 6px 0 0;
     grid-column: 1 / -1;
   }
 
   @media (min-width: $desktop-width) {
     padding: 40px 0 0;
-    margin-top: 16px;
+    margin: 16px 0 0;
   }
 }
 

@@ -1,5 +1,5 @@
 .reviews {
-  padding: 50px 15px;
+  padding: 56px 15px 50px;
 
   @media (min-width: $tablet-width) {
     padding: 50px 45px;
@@ -11,7 +11,7 @@
 }
 
 .reviews__title {
-  margin: 0 0 35px;
+  margin: 0 0 34px;
 
   @media (min-width: $desktop-width) {
     margin: 0 0 45px;
@@ -31,12 +31,21 @@
 
 .reviews__item {
   height: 100%;
-}
+  display: none;
 
-.reviews__item:first-child {
-  @media (min-width: $desktop-width) {
-    .review {
-      padding: 50px 50px 76px;
+  &:first-child {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      .review {
+        padding: 50px 50px 76px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      display: block;
     }
   }
 }

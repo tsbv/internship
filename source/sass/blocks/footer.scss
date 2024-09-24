@@ -1,6 +1,6 @@
 .footer {
   margin-top: auto;
-  padding: 40px 15px;
+  padding: 39px 15px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 38px 45px 40px;
@@ -27,7 +27,7 @@
 }
 
 .footer__logo {
-  margin: 0 auto 20px;
+  margin: 0 auto 19px;
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -40,7 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px 30px;
+  gap: 18px 30px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -90,7 +90,7 @@
 }
 
 .footer__privacy-policy {
-  margin: 0 0 13px;
+  margin: 1px 0 13px;
   max-width: 182px;
   align-self: center;
   text-decoration: none;
@@ -191,6 +191,7 @@
 }
 
 .footer__social {
+  margin-top: -1px;
   order: 2;
   max-width: 98px;
 
