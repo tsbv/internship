@@ -412,27 +412,23 @@
                 Телефон
                 <input class="form-element__field field field--tel" type="tel" name="phone" id="phone" required>
               </label>
-              <label class="form-element__label" for="message">
-                Ваше сообщение
-                <textarea class="form-element__field field form-element__textarea" name="message" id="message"></textarea>
-              </label>
-              <label class="form-element__label" for="select-city">
-                Выберите город
-                <div class="select">
-                  <button class="select__button button" type="button" aria-label="Выберите город."></button>
-                  <ul class="select__list reset-list" role="listbox">
-                    <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
-                    <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
-                    <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
-                    <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
-                  </ul>
-                  <input class="select__input visually-hidden" type="text" name="select-city" id="select-city" value=" ">
-                </div>
-              </label>
+              <label class="form-element__label" for="message">Ваше сообщение</label>
+              <textarea class="form-element__field field form-element__textarea" name="message" id="message"></textarea>
+              <label class="form-element__label form-element__select-label" for="select-city">Выберите город</label>
+              <div class="select">
+                <button class="select__button button" type="button" aria-label="Выберите город."></button>
+                <ul class="select__list reset-list" role="listbox">
+                  <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
+                  <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
+                  <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
+                  <li class="select__item" data-value="saint-petersburg" tabindex="0" role="option">Санкт-Петербург</li>
+                </ul>
+                <input class="select__input visually-hidden" type="text" name="select-city" id="select-city" value=" ">
+              </div>
               <label class="checkbox" for="checkbox">
                 <input class="checkbox__input field visually-hidden" type="checkbox" name="data-processing-consent" id="checkbox" required>
                 <span class="checkbox__control"></span>
-                Я согласен на обработку моих персональных <br class="checkbox__break"> данных
+                Я согласен на обработку моих персональных <br class="checkbox__break">данных
               </label>
               <button class="form-element__button button button--primary" type="submit">Отправить</button>
             </form>

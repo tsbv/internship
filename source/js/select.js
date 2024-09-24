@@ -1,5 +1,6 @@
 const setupSelectHandler = () => {
   const selectNodes = document.querySelectorAll('.select');
+  const selectLabelNode = document.querySelector('.form-element__select-label');
   selectNodes.forEach((selectNode) => { // Находим необходимые элементы внутри селекта
     const selectButtonNode = selectNode.querySelector('.select__button');
     const selectListNode = selectNode.querySelector('.select__list');
@@ -10,6 +11,7 @@ const setupSelectHandler = () => {
       selectListNode.classList.toggle('select__list--visible');
       selectButtonNode.classList.toggle('select__button--rotated');
       selectButtonNode.classList.toggle('select__button--open');
+      selectLabelNode.classList.toggle('form-element__label--opened');
     };
     const handleOutsideClick = (event) => { // Обрабатываем клик вне селекта
       if (!selectNode.contains(event.target) && isListVisible()) {

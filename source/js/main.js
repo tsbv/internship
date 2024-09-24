@@ -11,6 +11,7 @@ import { setupTabsHandler } from './tabs';
 import { initializeModalHandler } from './modal';
 import { numberMaskHandler } from './phone-input';
 import { setupFormValidation } from './form-validation';
+import { initializeSelectStyles } from './select-styles';
 
 toggleBurgerHandler(); // Инициализация бургер меню
 setupSelectHandler(); // Кастомный селект
@@ -20,3 +21,4 @@ setupTabsHandler(); // Инициализация табов
 initializeModalHandler(); // Инициализация модального окна
 numberMaskHandler(); // Инициализация маски инпута телефона
 setupFormValidation(); // Валидация формы
+initializeSelectStyles(); // Инициализация стилей состояний селекта
