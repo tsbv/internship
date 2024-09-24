@@ -133,6 +133,10 @@
 }
 
 .contacts__link {
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+  }
+
   &--phone {
     @media (min-width: $tablet-width) {
       min-width: 132px;

@@ -14,6 +14,10 @@
   @media (min-width: $tablet-width) {
     max-width: none;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1240px;
+  }
 }
 
 .reviews__title {
@@ -38,6 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: center;
     gap: 32px;
   }
 }
