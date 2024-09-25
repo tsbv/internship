@@ -207,6 +207,60 @@
 
   &::before {
     background-color: $primary;
+    transition: transform 0.3s ease;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $white;
+      color: $primary;
+
+      &::before {
+        background-color: $white;
+        transform: rotate(45deg) translate(-3px, -3px);
+      }
+
+      &::after {
+        background-color: $primary;
+      }
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    &::before {
+      transform: rotate(45deg) translate(-3px, -3px);
+    }
+  }
+
+  &:active {
+    background-color: $white;
+    color: rgba(49, 109, 194, 0.7);
+
+    &::before {
+      background-color: $white;
+      opacity: 0.7;
+      transform: rotate(45deg) translate(-3px, -3px);
+    }
+
+    &::after {
+      background-color: $primary;
+    }
+  }
+
+  &:disabled {
+    color: $state-disabled;
+    border-color: $state-disabled;
+
+    &::before {
+      background-color: $white;
+      opacity: 0.6;
+    }
+
+    &::after {
+      background-color: $state-disabled;
+    }
   }
 }
 
