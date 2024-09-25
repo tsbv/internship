@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 75px 100px 122px;
+    padding: 65px 100px 122px;
   }
 }
 
@@ -43,7 +43,8 @@
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
-    padding: 5px 5px 5px 30px;
+    padding: 20px 81px 20px 31px;
+    align-content: normal;
     min-width: 234px;
     max-width: 234px;
     transform: translateY(-3px);
