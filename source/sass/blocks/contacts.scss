@@ -20,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 22.9px 20.5px;
   }
 }
 
@@ -180,7 +181,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 40px 0 0;
-    margin: 16px 0 0;
+    margin: 17px 0 0;
   }
 }
 

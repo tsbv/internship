@@ -77,7 +77,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 16px 22px;
+      padding: 14px 33px;
     }
   }
 }
@@ -85,7 +85,7 @@
 .tabs__item:nth-child(2) {
   @media (min-width: $desktop-width) {
     .tabs__button {
-      padding: 16px 23px;
+      padding: 14px 21px;
     }
   }
 }
@@ -93,7 +93,7 @@
 .tabs__item:nth-child(3) {
   @media (min-width: $desktop-width) {
     .tabs__button {
-      padding: 16px 11px;
+      padding: 14px 9px;
     }
   }
 }
@@ -101,7 +101,7 @@
 .tabs__item:nth-child(4) {
   @media (min-width: $desktop-width) {
     .tabs__button {
-      padding: 16px 49px;
+      padding: 14px 47px;
     }
   }
 }
@@ -109,7 +109,7 @@
 .tabs__item:nth-child(5) {
   @media (min-width: $desktop-width) {
     .tabs__button {
-      padding: 16px 7px;
+      padding: 14px 5px;
     }
   }
 }

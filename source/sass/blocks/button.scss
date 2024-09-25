@@ -63,6 +63,11 @@
       top: 3px;
       right: 3px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 5px;
+      right: 5px;
+    }
   }
 }
 

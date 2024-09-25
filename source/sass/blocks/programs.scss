@@ -49,6 +49,17 @@
     transform: translateY(-3px);
     order: initial;
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: 23px;
+    }
+
+    &::after {
+      top: 4px;
+      right: 4px;
+    }
+  }
 }
 
 .programs__list {
