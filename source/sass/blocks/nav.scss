@@ -35,6 +35,25 @@
   color: $white;
   opacity: 0.7;
   cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &--current {
+    opacity: 1;
+  }
 }
 
 .nav__link-arrow::after {
@@ -85,6 +104,25 @@
   line-height: 100%;
   color: $white;
   opacity: 0.6;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: initial;
+  }
+
+  &--current {
+    opacity: 0.9;
+  }
 }
 
 .nav__sublink-active {
