@@ -189,24 +189,30 @@
 }
 
 .program__link {
-  margin: 0 0 3px;
-  padding: 10px;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-color: $primary;
-  border-radius: 44px;
+  @media (hover: hover) {
+    &:hover {
+      background-color: $white;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: $white;
-    mask-image: url("/__spritemap#sprite-arrow-link-view");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: 8px 8px;
+      &::before {
+        background-color: $primary;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: rgba(49, 109, 194, 0.7);
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $primary;
+
+    &::before {
+      background-color: $white;
+      transform: rotate(45deg);
+    }
   }
 }
