@@ -242,8 +242,12 @@
 
       &::before {
         background-color: $primary;
-        transform: rotate(45deg) translateY(-50%);
+        transform: rotate(45deg) translate(4px, -9px);
         right: 27px;
+
+        @media (min-width: $tablet-width) {
+          transform: rotate(45deg) translateY(-50%);
+        }
       }
 
       &::after {
