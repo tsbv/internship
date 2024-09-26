@@ -59,7 +59,9 @@
       background-color: $primary;
 
       &::before {
+        right: 18px;
         background-color: $primary;
+        transform: translateY(-50%);
       }
 
       &::after {
@@ -70,6 +72,10 @@
 
   &:active {
     border-color: initial;
+
+    &::before {
+      transform: translateY(-50%);
+    }
   }
 
   &:focus-visible {
@@ -80,6 +86,7 @@
 
     &::before {
       background-color: $primary;
+      transform: translate(50%, -50%);
     }
 
     &::after {
