@@ -304,6 +304,11 @@
       width: 46px;
       height: 46px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 3px;
+      right: 3px;
+    }
   }
 
   @media (hover: hover) {
@@ -314,6 +319,11 @@
 
       &::before {
         background-color: $primary;
+        right: 20px;
+
+        @media (min-width: $tablet-width) {
+          right: 25px;
+        }
       }
 
       &::after {

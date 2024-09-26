@@ -189,6 +189,8 @@
 }
 
 .program__link {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
   @media (hover: hover) {
     &:hover {
       background-color: $white;
