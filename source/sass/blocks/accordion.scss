@@ -1,5 +1,5 @@
 .accordion {
-  padding: 22px 15px 20px;
+  padding: 20px 15px;
   min-height: 84px;
   border: 2px solid $primary;
   border-radius: 14px;
@@ -59,6 +59,20 @@
       max-width: 775px;
       font-size: 28px;
       line-height: 34px;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      span {
+        max-width: 445px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      span {
+        max-width: 775px;
+      }
     }
   }
 
@@ -130,8 +144,12 @@
 
   p {
     color: $beige;
-    margin-top: 27px;
+    margin-top: 22px;
     opacity: 1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 27px;
+    }
 
     @media (min-width: $desktop-width) {
       margin-top: 23px;
