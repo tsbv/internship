@@ -4,8 +4,8 @@
   z-index: 1;
   background-color: #7d7371;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     min-height: 1024px;
@@ -34,6 +34,7 @@
     color: $text;
     background-color: $white;
     border-radius: 0 0 14px;
+    text-align: left;
 
     @media (min-width: $tablet-width) {
       padding: 0 40px 35px;
@@ -81,6 +82,24 @@
   @media (resolution >= 2dppx) {
     background-image: url("../../img/hero/hero-slide-2-mobile@2x.jpg");
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/hero/hero-slide-2-tablet.jpg");
+    background-position: top;
+    background-size: 100%;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/hero/hero-slide-2-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/hero/hero-slide-2-desktop.jpg");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/hero/hero-slide-2-desktop@2x.jpg");
+    }
+  }
 }
 
 .hero-card--abroad {
@@ -89,19 +108,38 @@
   @media (resolution >= 2dppx) {
     background-image: url("../../img/hero/hero-slide-3-mobile@2x.jpg");
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/hero/hero-slide-3-tablet.jpg");
+    background-position: top;
+    background-size: 100%;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/hero/hero-slide-3-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/hero/hero-slide-3-desktop.jpg");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/hero/hero-slide-3-desktop@2x.jpg");
+    }
+  }
 }
 
 .hero-card__descr {
-  padding: 229px 0 30px;
+  padding: 201px 0 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 687px 0 50px;
+    padding: 647px 0 50px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 433px 0 50px;
+    padding: 393px 0 50px;
+    flex-direction: column;
   }
 }
 
@@ -114,6 +152,7 @@
   line-height: 26px;
   background-color: $white;
   border-radius: 0 16px 16px 0;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     padding: 30.5px 40px 23.5px;
@@ -154,9 +193,22 @@
   }
 }
 
+.hero-card__bottom-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .hero-card__angle {
   position: relative;
   max-width: 184px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: initial;
+  }
 
   &::before {
     content: "";
@@ -194,14 +246,14 @@
     background-image: url("/__spritemap#sprite-angle-view");
     background-repeat: no-repeat;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       content: none;
     }
   }
 }
 
 .hero-card__link {
-  margin-left: 15px;
+  margin: 0;
   padding: 6px 5px 5px 20px;
   min-width: 154px;
   min-height: 44px;
