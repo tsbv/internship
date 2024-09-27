@@ -70,13 +70,13 @@
   }
 
   @media (hover: hover) {
-    &:hover,
-    &:focus-within {
+    &:hover {
       color: $beige;
+    }
 
-      .form-element__field {
-        border-color: $white;
-      }
+    &:has(+ .form-element__field:focus-visible),
+    &:has(+ .form-element__field:hover) {
+      color: $beige;
     }
   }
 
@@ -125,6 +125,13 @@
   line-height: 100%;
   color: $beige;
   transition: color 0.3s ease, border-color 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      outline: none;
+      border-color: $white;
+    }
+  }
 
   &:focus-visible {
     outline: none;
