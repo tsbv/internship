@@ -18,31 +18,72 @@
   @media (min-width: $desktop-width) {
     gap: 12px;
   }
+}
 
-  .form-element__label {
-    color: $text;
-    font-size: 14px;
-    line-height: 100%;
+.form-element--dark .form-element__label {
+  color: rgba(72, 72, 72, 0.8);
+  font-size: 14px;
+  line-height: 100%;
 
-    @media (min-width: $desktop-width) {
-      line-height: 18px;
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $text;
+    }
+
+    &:has(+ .form-element__field:focus-visible),
+    &:has(+ .form-element__field:hover) {
+      color: $text;
     }
   }
 
-  .form-element__field {
-    margin: 0 0 7px;
-    font-family: $font-family;
-    border-color: rgba(72, 72, 72, 0.3);
+  &:active {
     color: $text;
-    min-height: 44px;
 
-    @media (min-width: $tablet-width) {
-      min-height: 50px;
+    .form-element__field {
+      border-color: $text;
     }
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      margin: 0 0 8px;
+.form-element--dark .form-element__field {
+  margin: 0 0 7px;
+  font-family: $font-family;
+  border-color: rgba(72, 72, 72, 0.3);
+  color: $text;
+  min-height: 44px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 8px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: $text;
     }
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: $text;
+  }
+
+  &:active {
+    border-color: $text;
+  }
+
+  &:disabled {
+    background-color: rgba(169, 175, 183, 0.2);
+    border-color: rgba(169, 175, 183, 0.5);
+    pointer-events: none;
+    opacity: 0.6;
   }
 }
 

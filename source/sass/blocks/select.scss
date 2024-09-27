@@ -75,6 +75,7 @@
   min-height: 44px;
   color: $text;
   border-color: rgba(72, 72, 72, 0.3);
+  transition: color 0.3s, border-color 0.3s;
 
   @media (min-width: $tablet-width) {
     margin-top: 2px;
@@ -85,16 +86,19 @@
     color: $text;
     background-color: $text;
     mask-size: 16px 9px;
+    transition: transform 0.3s;
   }
 
   @media (hover: hover) {
     &:hover {
+      color: $text;
       border-color: $text;
     }
   }
 
   &:focus-visible {
     outline: none;
+    color: $text;
     border-color: $text;
 
     &::after {
@@ -103,6 +107,9 @@
   }
 
   &:active {
+    color: $text;
+    border-color: $text;
+
     &::after {
       transform: rotate(-180deg) translateY(50%);
     }
