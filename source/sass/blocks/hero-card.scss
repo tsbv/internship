@@ -129,16 +129,16 @@
 }
 
 .hero-card__descr {
-  padding: 201px 0 30px;
+  padding: 229px 0 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 647px 0 50px;
+    padding: 687px 0 50px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 393px 0 50px;
+    padding: 433px 0 50px;
     flex-direction: column;
   }
 }

@@ -9,15 +9,20 @@
 
 .swiper-hero {
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
+  position: relative;
 
   .swiper-slide {
     min-width: 100%;
+    height: auto;
   }
 
   .swiper-pagination {
     padding: 10px 16px;
+    position: absolute;
+    top: 201px;
+    min-width: 80px;
     max-width: 80px;
     display: flex;
     flex-wrap: wrap;
@@ -26,12 +31,21 @@
     background-color: $white;
 
     @media (min-width: $tablet-width) {
+      padding: 14px 20px;
+      min-width: 100px;
       max-width: 100px;
+      top: 647px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 393px;
     }
   }
 
   .swiper-pagination-bullet {
     margin: 0;
+    padding: 0;
     display: block;
     width: 8px;
     height: 8px;
