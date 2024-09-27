@@ -2,7 +2,7 @@ const initializeSelectStyles = () => {
   const selectButtonNode = document.querySelector('.select__button');
   const labelNode = document.querySelector('.form-element__select-label');
   const darkSelectButtonNode = document.querySelector('.select--dark .select__button');
-  const darkLabelNode = document.querySelector('.form-element__select-label--dark');
+  const darkLabelNode = document.querySelector('.form-element__select-label-dark');
   let isFocused = false;
   let isDarkFocused = false;
   const toggleStyles = (isHovered) => {
