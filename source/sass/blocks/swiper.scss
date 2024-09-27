@@ -33,6 +33,7 @@
     border-radius: 12px 12px 0 0;
     gap: 12px;
     background-color: $white;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 
     @media (min-width: $tablet-width) {
       padding: 14px 20px;
@@ -45,6 +46,12 @@
     @media (min-width: $desktop-width) {
       top: 393px;
     }
+  }
+
+  .swiper-pagination--hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0s, visibility 0s;
   }
 
   .swiper-pagination-bullet {
@@ -67,5 +74,11 @@
   .swiper-pagination-bullet-active {
     background-color: $state-active;
     border-color: $state-active;
+  }
+}
+
+.swiper-fade {
+  .swiper-slide {
+    transition-property: opacity;
   }
 }

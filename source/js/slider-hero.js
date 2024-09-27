@@ -1,18 +1,13 @@
 import { Swiper } from 'swiper';
-import { Pagination, EffectFade } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 const initHeroSlider = () => {
   const sliderHeroEl = document.querySelector('.swiper-hero');
   const swiperHero = new Swiper(sliderHeroEl, {
-    modules: [Pagination, EffectFade],
+    modules: [Pagination],
     loop: true,
     autoHeight: true,
     allowTouchMove: true,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
-    speed: 300,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -21,6 +16,16 @@ const initHeroSlider = () => {
       1440: {
         allowTouchMove: false,
       }
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        const pagination = this.pagination.el;
+        pagination.classList.add('swiper-pagination--hidden');
+      },
+      slideChangeTransitionEnd: function () {
+        const pagination = this.pagination.el;
+        pagination.classList.remove('swiper-pagination--hidden');
+      },
     },
   });
   swiperHero.update();
