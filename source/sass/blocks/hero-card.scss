@@ -26,7 +26,7 @@
   }
 
   p {
-    margin: 0 0 10px;
+    margin: 0;
     padding: 0 14px 15px;
     max-width: 267px;
     font-size: 16px;
@@ -215,24 +215,21 @@
     position: absolute;
     width: 184px;
     height: calc(100% + 20px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     background-color: $white;
     border-radius: 0 0 14px 14px;
 
     @media (min-width: $tablet-width) {
       width: 272px;
       height: 100%;
-      top: 50%;
-      left: 72%;
+      top: 0;
+      left: 0;
       border-radius: 0 0 30px;
-      transform: translate(-50%, -57.2%);
     }
 
     @media (min-width: $desktop-width) {
       width: 293px;
-      transform: translate(-49.8%, -57.7%);
     }
   }
 
