@@ -12,6 +12,7 @@ import { initializeModalHandler } from './modal';
 import { numberMaskHandler } from './phone-input';
 import { setupFormValidation } from './form-validation';
 import { initializeSelectStyles } from './select-styles';
+import { initHeroSlider } from './slider-hero';
 
 toggleBurgerHandler(); // Инициализация бургер меню
 setupSelectHandler(); // Кастомный селект
@@ -22,3 +23,4 @@ initializeModalHandler(); // Инициализация модального о�
 numberMaskHandler(); // Инициализация маски инпута телефона
 setupFormValidation(); // Валидация формы
 initializeSelectStyles(); // Инициализация стилей состояний селекта
+initHeroSlider (); // Инициализация hero слайдера

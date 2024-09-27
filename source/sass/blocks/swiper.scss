@@ -1,0 +1,53 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper-hero {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .swiper-slide {
+    min-width: 100%;
+  }
+
+  .swiper-pagination {
+    padding: 10px 16px;
+    max-width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12px 12px 0 0;
+    gap: 12px;
+    background-color: $white;
+
+    @media (min-width: $tablet-width) {
+      max-width: 100px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 2px solid $primary;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $state-active;
+    border-color: $state-active;
+  }
+}

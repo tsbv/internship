@@ -76,36 +76,53 @@
             </nav>
           </div>
         </header>
-        <ul class="hero__list reset-list">
-          <li class="hero__item">
-            <div class="hero-card hero-card--internships">
-              <div class="container hero-card__descr">
-                <h2 class="title hero-card__title">Глобальный профессиональный опыт обучения за рубежом</h2>
-                <p>Погрузитесь в&nbsp;академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
-                <!-- Состояние выключенной кнопки - добавить класс button__disabled ниже для ссылки -->
-                <div class="hero-card__angle"><a class="hero-card__link button button--primary" href="#">Подробнее</a></div>
-              </div>
-            </div>
-          </li>
-          <li class="hero__item">
-            <div class="hero-card hero-card--volunteer">
-              <div class="container hero-card__descr">
-                <h2 class="title hero-card__title">Волонтёрские программы — внесите свой вклад в общество</h2>
-                <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
-                <div class="hero-card__angle"><a class="hero-card__link button button--primary" href="#">Подробнее</a></div>
-              </div>
-            </div>
-          </li>
-          <li class="hero__item">
-            <div class="hero-card hero-card--abroad">
-              <div class="container hero-card__descr">
-                <h2 class="title hero-card__title">Программы стажировок в крупнейших компаниях мира</h2>
-                <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
-                <div class="hero-card__angle"><a class="hero-card__link button button--primary" href="#">Подробнее</a></div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <div class="swiper-container">
+          <div class="swiper-hero">
+            <ul class="swiper-wrapper hero__list reset-list">
+              <li class="swiper-slide hero__item">
+                <div class="hero-card hero-card--internships">
+                  <div class="container hero-card__descr">
+                    <h2 class="title hero-card__title">Глобальный профессиональный опыт обучения за рубежом</h2>
+                    <div class="hero-card__bottom-wrapper">
+                      <p>Погрузитесь в&nbsp;академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                      <!-- Состояние выключенной кнопки - добавить класс button__disabled ниже для ссылки -->
+                      <div class="hero-card__angle">
+                        <a class="hero-card__link button button--primary" href="#">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide hero__item">
+                <div class="hero-card hero-card--volunteer">
+                  <div class="container hero-card__descr">
+                    <h2 class="title hero-card__title">Волонтёрские программы — внесите свой вклад в общество</h2>
+                    <div class="hero-card__bottom-wrapper">
+                      <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+                      <div class="hero-card__angle">
+                        <a class="hero-card__link button button--primary" href="#">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide hero__item">
+                <div class="hero-card hero-card--abroad">
+                  <div class="container hero-card__descr">
+                    <h2 class="title hero-card__title">Программы стажировок в крупнейших компаниях мира</h2>
+                    <div class="hero-card__bottom-wrapper">
+                      <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+                      <div class="hero-card__angle">
+                        <a class="hero-card__link button button--primary" href="#">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
       <section class="about" data-test="about" id="about">
         <div class="container about__container">
