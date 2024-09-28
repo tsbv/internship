@@ -54,6 +54,28 @@
     }
   }
 
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 201px;
+    bottom: auto;
+    left: auto;
+
+    @media (min-width: $tablet-width) {
+      top: 647px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 393px;
+    }
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+  }
+
   .swiper-pagination--hidden {
     opacity: 0;
     visibility: hidden;

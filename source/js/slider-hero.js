@@ -1,16 +1,18 @@
-import { Swiper } from 'swiper';
-import { Pagination } from 'swiper/modules';
+import Swiper from 'swiper/bundle';
+import 'swiper/swiper-bundle.css';
 
 const initHeroSlider = () => {
   const sliderHeroEl = document.querySelector('.swiper-hero');
   const swiperHero = new Swiper(sliderHeroEl, {
-    modules: [Pagination],
     loop: true,
     autoHeight: true,
     allowTouchMove: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      renderBullet: function (index, className) {
+        return `<button class="${className}" type="button" aria-label="Перейти на слайд ${index + 1}">`;
+      },
     },
     breakpoints: {
       1440: {
