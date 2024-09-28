@@ -1,20 +1,38 @@
 import { Swiper } from 'swiper';
-import { Pagination } from 'swiper/modules';
+import { Navigation, Scrollbar } from 'swiper/modules';
 
 const initProgramsSlider = () => {
   const sliderProgramsEl = document.querySelector('.swiper-programs');
   const swiperPrograms = new Swiper(sliderProgramsEl, {
-    modules: [Pagination],
-    loop: true,
-    autoHeight: true,
+    modules: [Navigation, Scrollbar],
+    loop: false,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
     allowTouchMove: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: true,
+      draggable: true,
     },
     breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+      },
       1440: {
+        slidesPerView: 3,
+        slidesPerGroup: 1,
         allowTouchMove: false,
+        spaceBetween: 32,
       }
     },
   });

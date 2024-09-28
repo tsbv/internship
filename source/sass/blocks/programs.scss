@@ -17,7 +17,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 37px 0;
+    gap: 15px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,15 +65,9 @@
 
 .programs__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-
-  @media (min-width: $desktop-width) {
-    gap: 32px;
-  }
 }
 
-.programs__item {
+/* .programs__item {
   display: none;
 
   &:first-child {
@@ -91,4 +85,4 @@
       display: block;
     }
   }
-}
+} */

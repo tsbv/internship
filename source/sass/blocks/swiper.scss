@@ -5,6 +5,7 @@
 
 .swiper-container {
   position: relative;
+  overflow: hidden;
 }
 
 .swiper-hero {
@@ -79,6 +80,31 @@
   .swiper-pagination-bullet-active {
     background-color: $state-active;
     border-color: $state-active;
+  }
+}
+
+.swiper-programs {
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+
+  .swiper-slide {
+    min-width: 290px;
+    max-width: 290px;
+    min-height: 400px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 324px;
+      max-width: 324px;
+      min-height: 420px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 392px;
+      max-width: 392px;
+    }
   }
 }
 
