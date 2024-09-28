@@ -6,6 +6,7 @@ const initProgramsSlider = () => {
   const swiperPrograms = new Swiper(sliderProgramsEl, {
     modules: [Navigation, Scrollbar],
     loop: false,
+    /* slideToClickedSlide: true, */
     slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 30,
