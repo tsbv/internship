@@ -1,10 +1,18 @@
 .nav {
   width: 100%;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 286px;
+  }
 }
 
 .nav--opened {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
 }
 
 .nav__menu {
@@ -21,7 +29,7 @@
 }
 
 .nav__link {
-  padding-right: 20px;
+  max-width: 126px;
   position: relative;
   display: flex;
   align-items: center;
@@ -54,6 +62,10 @@
   &--current {
     opacity: 1;
   }
+}
+
+.nav__link-arrow {
+  padding-right: 20px;
 }
 
 .nav__link-arrow::after {
