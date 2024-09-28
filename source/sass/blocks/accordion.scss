@@ -16,6 +16,8 @@
   @media (min-width: $desktop-width) {
     padding: 43px 40px;
     min-height: 124px;
+    display: flex;
+    flex-direction: column;
   }
 
   p {
@@ -93,6 +95,12 @@
     }
   }
 
+  &:nth-child(n+4).accordion--open {
+    @media (min-width: $desktop-width) {
+      padding: 40px 40px 38px;
+    }
+  }
+
   @media (hover: hover) {
     &:hover,
     &:has(:focus-visible) {
@@ -134,7 +142,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 40px 38px;
+    padding: 43px 40px 38px;
     min-height: 222px;
   }
 
@@ -154,6 +162,12 @@
     @media (min-width: $desktop-width) {
       margin-top: 23px;
     }
+  }
+}
+
+.accordion:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    padding: 43px 40px 38px;
   }
 }
 
