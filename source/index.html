@@ -159,41 +159,47 @@
         <div class="container programs__container">
           <h2 class="title programs__title">Программы</h2>
           <a class="programs__link button button--primary" href="#">Все программы</a>
-          <ul class="programs__list reset-list">
-            <li class="programs__item">
-              <div class="program program--internships">
-                <div class="container program__descr">
-                  <h3 class="program__name">Стажировки</h3>
-                  <div class="program__angle">
-                    <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
-                    <a class="program__link button button--circle" href="#" aria-label="Узнать больше о программе."></a>
+          <div class="swiper-container">
+            <div class="swiper-programs">
+              <button class="swiper-button-prev" type="button" aria-label="Предыдущий слайд."></button>
+              <button class="swiper-button-next" type="button" aria-label="Следующий слайд."></button>
+              <ul class="programs__list swiper-wrapper reset-list">
+                <li class="programs__item swiper-slide">
+                  <div class="program program--internships">
+                    <div class="container program__descr">
+                      <h3 class="program__name">Стажировки</h3>
+                      <div class="program__angle">
+                        <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                        <a class="program__link button button--circle" href="#" aria-label="Узнать больше о программе."></a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </li>
-            <li class="programs__item">
-              <div class="program program--volunteering">
-                <div class="container program__descr">
-                  <h3 class="program__name">Волонтёрство</h3>
-                  <div class="program__angle">
-                    <p>Помогайте другим и развивайте свои лидерские качества.</p>
-                    <a class="program__link button button--circle" href="#" aria-label="Узнать больше о программе."></a>
+                </li>
+                <li class="programs__item swiper-slide">
+                  <div class="program program--volunteering">
+                    <div class="container program__descr">
+                      <h3 class="program__name">Волонтёрство</h3>
+                      <div class="program__angle">
+                        <p>Помогайте другим и развивайте свои лидерские качества.</p>
+                        <a class="program__link button button--circle" href="#" aria-label="Узнать больше о программе."></a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </li>
-            <li class="programs__item">
-              <div class="program program--studies">
-                <div class="container program__descr">
-                  <h3 class="program__name">Учёба</h3>
-                  <div class="program__angle">
-                    <p>Получите образование и измените своё будущее.</p>
-                    <a class="program__link button button--circle" href="#" aria-label="Узнать больше о программе."></a>
+                </li>
+                <li class="programs__item swiper-slide">
+                  <div class="program program--studies">
+                    <div class="container program__descr">
+                      <h3 class="program__name">Учёба</h3>
+                      <div class="program__angle">
+                        <p>Получите образование и измените своё будущее.</p>
+                        <a class="program__link button button--circle" href="#" aria-label="Узнать больше о программе."></a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="grant" data-test="grant" id="grant">
