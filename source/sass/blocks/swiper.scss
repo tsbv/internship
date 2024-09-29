@@ -30,6 +30,38 @@
     background-color: $primary;
     opacity: 1;
   }
+
+  .swiper-button-prev.swiper-button-disabled::after,
+  .swiper-button-next.swiper-button-disabled::after {
+    background-color: $state-disabled;
+    opacity: 1;
+  }
+}
+
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next {
+  top: 20px;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-radius: 30px;
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $white;
+    border-radius: 30px;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
 }
 
 .swiper-hero {
@@ -136,6 +168,8 @@
   height: auto;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   .swiper-slide {
     min-width: 290px;
@@ -152,6 +186,36 @@
       min-width: 392px;
       max-width: 392px;
     }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    order: -1;
+  }
+
+  .swiper-button-prev {
+    transform: rotate(-180deg);
+    margin-left: 30px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    font-size: inherit;
+    background-color: $primary;
+    mask-image: url("/__spritemap#sprite-arrow-link-view");
+    mask-repeat: no-repeat;
+    mask-size: 10px 10px;
+    mask-position: center;
+    transform: rotate(45deg);
   }
 }
 
