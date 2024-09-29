@@ -16,7 +16,6 @@ const initProgramsSlider = () => {
     },
     scrollbar: {
       el: '.swiper-scrollbar',
-      hide: true,
       draggable: true,
     },
     breakpoints: {

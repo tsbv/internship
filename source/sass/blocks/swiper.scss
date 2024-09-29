@@ -106,6 +106,7 @@
 }
 
 .swiper-programs {
+  padding: 0 0 20px;
   width: 100%;
   min-height: 400px;
   height: auto;
@@ -127,6 +128,30 @@
       min-width: 392px;
       max-width: 392px;
     }
+  }
+
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 109, 194, 0.2);
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      max-width: 562px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      max-width: 1136px;
+    }
+  }
+
+  .swiper-scrollbar-drag {
+    background-color: $primary;
+    opacity: 1;
   }
 }
 
