@@ -6,7 +6,7 @@ const initReviewsSlider = () => {
   const swiperReviews = new Swiper(sliderReviewsEl, {
     modules: [Navigation, Scrollbar],
     loop: false,
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     slidesPerGroup: 1,
     spaceBetween: 30,
     allowTouchMove: true,
@@ -20,16 +20,12 @@ const initReviewsSlider = () => {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
         slidesPerGroup: 1,
       },
       768: {
-        slidesPerView: 2,
         slidesPerGroup: 1,
       },
       1440: {
-        slidesPerView: 2,
-        slidesPerGroup: 1,
         allowTouchMove: false,
         spaceBetween: 32,
       }

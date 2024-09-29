@@ -1,5 +1,6 @@
 .review {
   padding: 30px 15px;
+  min-height: 472px;
   display: grid;
   grid-template-columns: 60px 186px;
   gap: 0 10px;
@@ -9,12 +10,14 @@
   @media (min-width: $tablet-width) {
     padding: 50px;
     min-width: 560px;
+    min-height: 417px;
     grid-template-columns: 90px 57px 279px;
     gap: 0 15px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 604px;
+    min-height: 483px;
     grid-template-columns: 90px 63px 316px;
     gap: 30px 15px;
   }

@@ -6,6 +6,30 @@
 .swiper-container {
   position: relative;
   overflow: hidden;
+
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 109, 194, 0.2);
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      max-width: 562px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      max-width: 1136px;
+    }
+  }
+
+  .swiper-scrollbar-drag {
+    background-color: $primary;
+    opacity: 1;
+  }
 }
 
 .swiper-hero {
@@ -129,29 +153,41 @@
       max-width: 392px;
     }
   }
+}
 
-  .swiper-horizontal > .swiper-scrollbar,
-  .swiper-scrollbar.swiper-scrollbar-horizontal {
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(49, 109, 194, 0.2);
-    display: none;
+.swiper-reviews {
+  width: 100%;
+  min-height: 472px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
 
-    @media (min-width: $tablet-width) {
-      display: block;
-      max-width: 562px;
+  @media (min-width: $tablet-width) {
+    padding: 0 0 40px;
+    min-height: 417px;
+
+    .swiper-slide {
+      width: 80%;
+      min-width: 560px;
+      max-width: 560px;
+      min-height: 417px;
     }
 
-    @media (min-width: $desktop-width) {
-      display: block;
-      max-width: 1136px;
+    .swiper-slide:nth-child(2n) {
+      width: 60%;
+    }
+
+    .swiper-slide:nth-child(3n) {
+      width: 40%;
     }
   }
 
-  .swiper-scrollbar-drag {
-    background-color: $primary;
-    opacity: 1;
+  @media (min-width: $desktop-width) {
+    min-height: 483px;
+
+    .swiper-slide {
+      min-height: 483px;
+    }
   }
 }
 

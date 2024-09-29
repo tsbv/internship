@@ -36,33 +36,19 @@
 .reviews__list {
   display: flex;
 
-  @media (min-width: $tablet-width) {
-    overflow: hidden;
-  }
-
   @media (min-width: $desktop-width) {
-    justify-content: center;
     gap: 32px;
   }
 }
 
 .reviews__item {
   height: 100%;
-  display: none;
 
   &:first-child {
-    display: block;
-
     @media (min-width: $desktop-width) {
       .review {
         padding: 50px 50px 76px;
       }
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &:nth-child(2) {
-      display: block;
     }
   }
 }
