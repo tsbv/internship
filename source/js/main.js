@@ -14,15 +14,17 @@ import { setupFormValidation } from './form-validation';
 import { initializeSelectStyles } from './select-styles';
 import { initHeroSlider } from './slider-hero';
 import { initProgramsSlider } from './slider-programs';
+import { initReviewsSlider } from './slider-reviews';
 
 toggleBurgerHandler(); // Инициализация бургер меню
 setupSelectHandler(); // Кастомный селект
 accordionHandler(); // Инициализация аккордеонов
-navSubmenuHandler (); // Инициализация подменю
+navSubmenuHandler(); // Инициализация подменю
 setupTabsHandler(); // Инициализация табов
 initializeModalHandler(); // Инициализация модального окна
 numberMaskHandler(); // Инициализация маски инпута телефона
 setupFormValidation(); // Валидация формы
 initializeSelectStyles(); // Инициализация стилей состояний селекта
-initHeroSlider (); // Инициализация hero слайдера
-initProgramsSlider (); // Инициализация programs слайдера
+initHeroSlider(); // Инициализация hero слайдера
+initProgramsSlider(); // Инициализация programs слайдера
+initReviewsSlider(); // Инициализация reviews слайдера
