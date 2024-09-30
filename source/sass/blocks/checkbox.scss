@@ -23,13 +23,11 @@
   &:hover .checkbox__control,
   &:focus-within .checkbox__control {
     background-color: transparent;
-    /* box-shadow: 0 0 0 1px $white; */
     border: 1px solid $white;
   }
 
   &:hover .checkbox__input:checked + .checkbox__control {
     background-color: transparent;
-    /* box-shadow: 0 0 0 1px $white; */
     border: 1px solid $white;
 
     &::before {
@@ -40,7 +38,6 @@
   &:focus-within .checkbox__input:checked + .checkbox__control {
     outline: none;
     background-color: transparent;
-    /* box-shadow: 0 0 0 1px $white; */
     border: 1px solid $white;
 
     &::before {
@@ -73,16 +70,6 @@
     border: 1px solid rgba(72, 72, 72, 0.2);
     pointer-events: none;
   }
-
-  /* .checkbox__input:disabled:checked + .checkbox__control {
-    background-color: $state-disabled;
-    border: none;
-
-    &::before {
-      background-color: $white;
-      opacity: 0.7;
-    }
-  } */
 
   &:hover .checkbox__control,
   &:focus-within .checkbox__control {
