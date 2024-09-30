@@ -50,6 +50,8 @@ const setupSelectHandler = () => {
           const direction = event.key === 'ArrowDown' ? 1 : -1;
           focusNextItem(currentIndex, direction);
         } else if (event.key === 'Escape') { // Закрытие списка выбора по Escape
+          event.preventDefault();
+          event.stopPropagation();
           toggleSelect();
           selectButtonNode.focus();
         }

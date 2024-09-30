@@ -8,6 +8,10 @@
   background-color: $dark-overlay;
   z-index: 2;
   cursor: pointer;
+
+  &--open {
+    display: block;
+  }
 }
 
 .modal__form {
