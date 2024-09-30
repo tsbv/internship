@@ -15,6 +15,7 @@ import { initializeSelectStyles } from './select-styles';
 import { initHeroSlider } from './slider-hero';
 import { initProgramsSlider } from './slider-programs';
 import { initReviewsSlider } from './slider-reviews';
+import { initializeCheckboxValidation } from './checkbox-validation';
 
 toggleBurgerHandler(); // Инициализация бургер меню
 setupSelectHandler(); // Кастомный селект
@@ -28,3 +29,4 @@ initializeSelectStyles(); // Инициализация стилей состо�
 initHeroSlider(); // Инициализация hero слайдера
 initProgramsSlider(); // Инициализация programs слайдера
 initReviewsSlider(); // Инициализация reviews слайдера
+initializeCheckboxValidation(); // Инициализация валидации чекбоксов
