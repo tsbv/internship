@@ -1,5 +1,6 @@
 const initializeCheckboxValidation = () => {
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const form = document.querySelector('form');
   checkboxes.forEach((checkbox) => {
     const checkboxControl = checkbox.nextElementSibling;
     checkbox.addEventListener('invalid', (event) => {
@@ -11,7 +12,6 @@ const initializeCheckboxValidation = () => {
       checkbox.checked && checkboxControl.classList.remove('checkbox__input--error')
     );
   });
-  const form = document.querySelector('form');
   if (form) {
     form.addEventListener('submit', () => {
       checkboxes.forEach((checkbox) => {
