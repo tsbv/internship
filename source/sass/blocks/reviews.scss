@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 65px 100px 122px;
+    padding: 65px 100px 70px;
   }
 }
 
@@ -35,10 +35,6 @@
 
 .reviews__list {
   display: flex;
-
-  @media (min-width: $desktop-width) {
-    gap: 32px;
-  }
 }
 
 .reviews__item {
