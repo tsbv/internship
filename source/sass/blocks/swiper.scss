@@ -62,7 +62,11 @@
 .swiper-container .swiper-button-next {
   padding: 0;
   width: 22px;
+  min-width: 22px;
+  max-width: 22px;
   height: 22px;
+  min-height: 22px;
+  max-height: 22px;
   top: 20px;
   background-color: transparent;
   border: none;
