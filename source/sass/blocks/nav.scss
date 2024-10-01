@@ -68,6 +68,12 @@
   padding-right: 20px;
 }
 
+.nav__item:nth-child(5) {
+  .nav__link.nav__link-arrow {
+    max-width: 101px;
+  }
+}
+
 .nav__link-arrow::after {
   content: "";
   position: absolute;
@@ -95,7 +101,7 @@
 
 .nav__submenu {
   margin-top: 10px;
-  padding-left: 20px;
+  padding-left: 16px;
   display: none;
   max-height: 0;
   overflow: hidden;
