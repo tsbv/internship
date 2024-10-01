@@ -16,6 +16,7 @@ import { initHeroSlider } from './slider-hero';
 import { initProgramsSlider } from './slider-programs';
 import { initReviewsSlider } from './slider-reviews';
 import { initializeCheckboxValidation } from './checkbox-validation';
+import { initNewsSlider } from './slider-news';
 
 toggleBurgerHandler(); // Инициализация бургер меню
 setupSelectHandler(); // Кастомный селект
@@ -30,3 +31,4 @@ initHeroSlider(); // Инициализация hero слайдера
 initProgramsSlider(); // Инициализация programs слайдера
 initReviewsSlider(); // Инициализация reviews слайдера
 initializeCheckboxValidation(); // Инициализация валидации чекбоксов
+initNewsSlider(); // Инициализация news слайдера
