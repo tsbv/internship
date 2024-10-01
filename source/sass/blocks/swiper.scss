@@ -51,10 +51,42 @@
     transform: rotate(45deg);
   }
 
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+    color: $state-disabled;
+  }
+
   .swiper-button-prev.swiper-button-disabled::after,
   .swiper-button-next.swiper-button-disabled::after {
     background-color: $state-disabled;
-    opacity: 1;
+  }
+
+  .swiper-pagination-bullet {
+    @media (hover: hover) {
+      &:hover {
+        border: 2px solid $primary;
+        color: $primary;
+        border-radius: 20px;
+        background-color: transparent;
+        opacity: 1;
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+      border: 2px solid $primary;
+      color: $primary;
+      border-radius: 20px;
+      background-color: $white;
+      opacity: 1;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $state-active;
+      opacity: 1;
+    }
   }
 }
 
