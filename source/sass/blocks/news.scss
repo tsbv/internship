@@ -63,3 +63,19 @@
     flex-wrap: nowrap;
   }
 }
+
+.news__item:nth-child(1) {
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    order: initial;
+  }
+}
+
+.news__item:nth-child(11) {
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    order: initial;
+  }
+}

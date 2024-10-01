@@ -16,12 +16,16 @@ const initNewsSlider = () => {
       el: '.swiper-pagination',
       clickable: true,
       renderBullet: function (index, className) {
-        return `<button class="${className}" type="button" aria-label="Перейти на слайд ${index + 1}">`;
+        const totalSlides = this.slides.length;
+        if (totalSlides <= 4 || index < 4) {
+          return `<button class="${className}" type="button" aria-label="Перейти на слайд ${index + 1}">${index + 1}</button>`;
+        }
+        return '';
       },
     },
     breakpoints: {
       320: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
         spaceBetween: 30,

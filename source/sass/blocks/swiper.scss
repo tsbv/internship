@@ -347,8 +347,9 @@
   }
 
   .swiper-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 640px;
     gap: 30px 0;
 
     @media (min-width: $tablet-width) {
@@ -361,7 +362,7 @@
   }
 
   .swiper-slide {
-    height: auto;
+    height: 50%;
     min-width: 290px;
     max-width: 290px;
     min-height: 330px;
@@ -391,6 +392,31 @@
       min-width: 604px;
       max-width: 604px;
     }
+  }
+
+  .swiper-pagination-bullet {
+    width: 26px;
+    height: 26px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primary;
+    background-color: transparent;
+    opacity: 0.5;
+
+    @media (min-width: $tablet-width) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    color: $white;
+    background-color: $primary;
+    opacity: 1;
   }
 }
 
