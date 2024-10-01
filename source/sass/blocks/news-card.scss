@@ -51,7 +51,7 @@
   }
 }
 
-.news__item:first-child {
+.news-card--large {
   @media (min-width: $desktop-width) {
     min-width: 604px;
 

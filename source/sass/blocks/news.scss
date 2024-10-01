@@ -43,7 +43,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   transform: translateX(-8px);
 
   @media (min-width: $tablet-width) {
@@ -55,29 +54,5 @@
   @media (min-width: $desktop-width) {
     max-width: 1240px;
     gap: 32px;
-  }
-}
-
-.news__item {
-  display: none;
-
-  &:nth-child(-n + 2) {
-    display: block;
-  }
-
-  @media (min-width: $tablet-width) {
-    &:nth-child(-n + 4) {
-      display: block;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:nth-child(-n + 4) {
-      display: none;
-    }
-
-    &:nth-child(-n + 3) {
-      display: block;
-    }
   }
 }
