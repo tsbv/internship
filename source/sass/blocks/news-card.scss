@@ -52,31 +52,6 @@
   }
 }
 
-.news-card--large {
-  @media (min-width: $desktop-width) {
-    min-width: 604px;
-
-    .news-card__title {
-      padding: 18px 18px 6px 0;
-      min-width: 426px;
-      max-width: 426px;
-    }
-
-    .news-card__angle {
-      min-width: 468px;
-      max-width: 468px;
-    }
-
-    .news-card__date {
-      padding: 13px 12px 5px 0;
-    }
-
-    .news-card p {
-      max-width: 404px;
-    }
-  }
-}
-
 .news-card__descr {
   margin-top: auto;
 }

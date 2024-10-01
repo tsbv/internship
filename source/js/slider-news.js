@@ -1,13 +1,15 @@
 import { Swiper } from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Grid, Pagination } from 'swiper/modules';
 
+const MIN_PAGINATION_BULLETS = 4;
 const initNewsSlider = () => {
   const sliderNewsEl = document.querySelector('.swiper-news');
   const swiperNews = new Swiper(sliderNewsEl, {
-    modules: [Navigation, Pagination],
+    modules: [Grid, Pagination],
     slidesPerView: 'auto',
     spaceBetween: 20,
     loop: false,
+    allowTouchMove: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -15,9 +17,8 @@ const initNewsSlider = () => {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-      renderBullet: function (index, className) {
-        const totalSlides = this.slides.length;
-        if (totalSlides <= 4 || index < 4) {
+      renderBullet: (index, className) => {
+        if (index < MIN_PAGINATION_BULLETS) {
           return `<button class="${className}" type="button" aria-label="Перейти на слайд ${index + 1}">${index + 1}</button>`;
         }
         return '';
@@ -32,6 +33,7 @@ const initNewsSlider = () => {
       },
       1440: {
         spaceBetween: 32,
+        allowTouchMove: false
       }
     },
   });
