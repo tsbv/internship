@@ -100,7 +100,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 17px 0 0;
+    margin: 16px 0 0;
     padding: 10px 0;
     min-width: 182px;
     line-height: 100%;
@@ -124,7 +124,7 @@
     background-color: $text;
 
     @media (min-width: $tablet-width) {
-      bottom: 9px;
+      bottom: 8px;
     }
 
     @media (min-width: $desktop-width) {

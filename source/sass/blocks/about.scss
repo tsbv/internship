@@ -111,12 +111,14 @@
     min-height: 56px;
 
     &::before {
-      right: 22px;
+      right: 23px;
     }
 
     &::after {
       width: 46px;
       height: 46px;
+      top: 4px;
+      right: 4px;
     }
   }
 

@@ -33,6 +33,14 @@
     mask-repeat: no-repeat;
     mask-position: center;
     transition: transform 0.3s ease;
+
+    @media (min-width: $tablet-width) {
+      transform: translateY(-44%);
+    }
+
+    @media (min-width: $desktop-width) {
+      transform: translateY(-50%);
+    }
   }
 
   @media (min-width: $tablet-width) {
