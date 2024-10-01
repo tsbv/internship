@@ -5,6 +5,8 @@ const initNewsSlider = () => {
   const sliderNewsEl = document.querySelector('.swiper-news');
   const swiperNews = new Swiper(sliderNewsEl, {
     modules: [Navigation, Pagination],
+    slidesPerView: 'auto',
+    spaceBetween: 20,
     loop: false,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -19,13 +21,15 @@ const initNewsSlider = () => {
     },
     breakpoints: {
       320: {
-
+        slidesPerView: 2,
       },
       768: {
-
+        spaceBetween: 30,
+        slidesPerView: 4,
       },
       1440: {
-
+        spaceBetween: 32,
+        slidesPerView: 3,
       }
     },
   });
