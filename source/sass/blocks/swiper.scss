@@ -370,7 +370,6 @@
       min-width: 324px;
       max-width: 324px;
       min-height: 350px;
-
     }
 
     @media (min-width: $desktop-width) {
@@ -381,6 +380,13 @@
   }
 
   .swiper-slide:first-child {
+    @media (min-width: $desktop-width) {
+      min-width: 604px;
+      max-width: 604px;
+    }
+  }
+
+  .swiper-slide-active {
     @media (min-width: $desktop-width) {
       min-width: 604px;
       max-width: 604px;

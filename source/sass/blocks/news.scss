@@ -52,9 +52,9 @@
     max-height: 730px;
     transform: none;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px 0px;
+    gap: 30px 0;
   }
 
   @media (min-width: $desktop-width) {

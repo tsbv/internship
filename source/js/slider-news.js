@@ -25,11 +25,9 @@ const initNewsSlider = () => {
       },
       768: {
         spaceBetween: 30,
-        slidesPerView: 4,
       },
       1440: {
         spaceBetween: 32,
-        slidesPerView: 3,
       }
     },
   });
