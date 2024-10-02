@@ -18,11 +18,13 @@
     @media (min-width: $tablet-width) {
       display: block;
       max-width: 562px;
+      bottom: 5px;
     }
 
     @media (min-width: $desktop-width) {
       display: block;
       max-width: 1136px;
+      bottom: 4px;
     }
   }
 
@@ -256,12 +258,8 @@
   gap: 0 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 59px;
+    padding: 0 0 64px;
     display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 0 60px;
   }
 
   .swiper-slide {
@@ -290,11 +288,10 @@
     position: static;
     display: flex;
     justify-content: flex-end;
-    justify-self: end;
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      bottom: -4px;
+      bottom: 0;
       right: 45px;
       gap: 0;
     }
@@ -302,7 +299,6 @@
     @media (min-width: $desktop-width) {
       min-width: 54px;
       max-width: 54px;
-      bottom: -4px;
       right: 0;
     }
   }
