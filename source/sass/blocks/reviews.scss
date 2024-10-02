@@ -35,6 +35,7 @@
 
 .reviews__list {
   display: flex;
+  grid-column: 1 / -1;
 }
 
 .reviews__item {
