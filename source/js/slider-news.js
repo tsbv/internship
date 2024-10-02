@@ -7,6 +7,7 @@ const initNewsSlider = () => {
   const swiperNews = new Swiper(sliderNewsEl, {
     modules: [Grid, Pagination],
     slidesPerView: 'auto',
+    slidesPerGroup: 1,
     spaceBetween: 20,
     loop: false,
     allowTouchMove: true,
@@ -27,12 +28,15 @@ const initNewsSlider = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
       },
       768: {
         spaceBetween: 30,
+        slidesPerGroup: 2,
       },
       1440: {
         spaceBetween: 32,
+        slidesPerGroup: 3,
         allowTouchMove: false
       }
     },
