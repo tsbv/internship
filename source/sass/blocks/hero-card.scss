@@ -70,6 +70,7 @@
 
   p:first-of-type {
     @media (min-width: $desktop-width) {
+      padding: 0 50px 35px;
       grid-column: 1;
       border-radius: 0 0 0 30px;
     }

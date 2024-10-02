@@ -425,13 +425,16 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     height: 640px;
-    gap: 30px 0;
+    gap: 20px 0;
 
     @media (min-width: $tablet-width) {
+      height: 792px;
       display: grid;
+      gap: 30px 0;
     }
 
     @media (min-width: $desktop-width) {
+      height: 400px;
       display: flex;
     }
   }
@@ -494,7 +497,21 @@
     }
   }
 
+  .swiper-pagination {
+    margin-top: 24px;
+    position: static;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 40px;
+      gap: 20px;
+    }
+  }
+
   .swiper-pagination-bullet {
+    margin: 0;
     width: 26px;
     height: 26px;
     font-family: $font-family;
@@ -542,6 +559,11 @@
     color: $white;
     background-color: $primary;
     opacity: 1;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
   }
 }
 

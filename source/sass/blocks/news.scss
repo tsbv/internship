@@ -1,12 +1,12 @@
 .news {
-  padding: 51px 0 81px 15px;
+  padding: 51px 15px 50px;
 
   @media (min-width: $tablet-width) {
     padding: 50px 45px 112px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 100px 132px;
+    padding: 60px 100px;
   }
 }
 
