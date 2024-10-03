@@ -335,7 +335,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 0 52px;
-    min-height: 417px;
+    min-height: 569px;
 
     .swiper-slide {
       width: 80%;
@@ -367,6 +367,17 @@
 
     .swiper-slide:nth-child(3n) {
       width: initial;
+    }
+  }
+
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    @media (min-width: $tablet-width) {
+      bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 4px;
     }
   }
 
@@ -445,16 +456,40 @@
     max-width: 290px;
     min-height: 330px;
 
+    &:nth-child(2) .swiper-slide-large,
+    &:nth-child(4) .swiper-slide-large {
+      min-height: 330px;
+    }
+
+    &:nth-child(13) .swiper-slide-large,
+    &:nth-child(15) .swiper-slide-large {
+      min-height: 240px;
+    }
+
     @media (min-width: $tablet-width) {
       min-width: 324px;
       max-width: 324px;
       min-height: 350px;
+
+      &:nth-child(2) .swiper-slide-large,
+      &:nth-child(4) .swiper-slide-large,
+      &:nth-child(13) .swiper-slide-large,
+      &:nth-child(15) .swiper-slide-large {
+        min-height: 350px;
+      }
     }
 
     @media (min-width: $desktop-width) {
       min-width: 286px;
       max-width: 286px;
       min-height: 400px;
+
+      &:nth-child(2) .swiper-slide-large,
+      &:nth-child(4) .swiper-slide-large,
+      &:nth-child(13) .swiper-slide-large,
+      &:nth-child(15) .swiper-slide-large {
+        min-height: 400px;
+      }
     }
   }
 
@@ -504,9 +539,13 @@
     gap: 16px;
     justify-content: center;
 
+    @media (min-width: $tablet-width) {
+      margin-top: 30px;
+      gap: 20px;
+    }
+
     @media (min-width: $desktop-width) {
       margin-top: 40px;
-      gap: 20px;
     }
   }
 
@@ -527,6 +566,8 @@
     @media (min-width: $tablet-width) {
       width: 32px;
       height: 32px;
+      font-size: 16px;
+      line-height: 20px;
     }
 
     @media (hover: hover) {
@@ -564,6 +605,24 @@
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0;
+  }
+
+  .navigation-wrapper {
+    margin-top: -24px;
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -27px;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin: 0;
+    position: static;
   }
 }
 
