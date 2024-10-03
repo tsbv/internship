@@ -100,9 +100,9 @@
 }
 
 .header__toggle--opened {
+  position: absolute;
   width: 100%;
   max-width: 290px;
-  position: absolute;
   top: 0;
   color: $white;
   background-color: $primary;

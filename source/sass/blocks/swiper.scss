@@ -9,11 +9,11 @@
 
   .swiper-horizontal > .swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
+    display: none;
     height: 2px;
     bottom: 0;
     left: 0;
     background-color: rgba(49, 109, 194, 0.2);
-    display: none;
 
     @media (min-width: $tablet-width) {
       display: block;
@@ -34,8 +34,8 @@
   }
 
   .swiper-button-prev {
-    transform: rotate(-180deg);
     margin-left: 30px;
+    transform: rotate(-180deg);
   }
 
   .swiper-button-prev::after,
@@ -124,9 +124,9 @@
   .swiper-pagination {
     padding: 10px 16px;
     position: absolute;
-    top: 201px;
     min-width: 80px;
     max-width: 80px;
+    top: 201px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 12px 12px 0 0;
@@ -304,8 +304,8 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    position: static;
     margin-left: 8px;
+    position: static;
 
     @media (min-width: $tablet-width) {
       margin-left: 10px;
@@ -330,7 +330,7 @@
   overflow: hidden;
   position: relative;
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: repeat(2, 140px);
   gap: 0 10px;
 
   @media (min-width: $tablet-width) {
@@ -383,8 +383,8 @@
     @media (min-width: $tablet-width) {
       margin: 0;
       position: absolute;
-      bottom: 0;
       right: 45px;
+      bottom: 0;
       gap: 0;
     }
 
@@ -397,8 +397,8 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    position: static;
     margin-left: 8px;
+    position: static;
 
     @media (min-width: $tablet-width) {
       margin-left: 10px;

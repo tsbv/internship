@@ -9,9 +9,9 @@ import { accordionHandler } from './accordion';
 import { navSubmenuHandler } from './submenu';
 import { setupTabsHandler } from './tabs';
 import { initializeModalHandler } from './modal';
-import { numberMaskHandler } from './phone-input';
+import { setupPhoneNumberMask } from './phone-number-mask';
 import { setupFormValidation } from './form-validation';
-import { initializeSelectStyles } from './select-styles';
+import { setupSelectStylesHandler } from './select-styles';
 import { initHeroSlider } from './slider-hero';
 import { initProgramsSlider } from './slider-programs';
 import { initReviewsSlider } from './slider-reviews';
@@ -24,9 +24,9 @@ accordionHandler(); // Инициализация аккордеонов
 navSubmenuHandler(); // Инициализация подменю
 setupTabsHandler(); // Инициализация табов
 initializeModalHandler(); // Инициализация модального окна
-numberMaskHandler(); // Инициализация маски инпута телефона
+setupPhoneNumberMask(); // Инициализация маски инпута телефона
 setupFormValidation(); // Валидация формы
-initializeSelectStyles(); // Инициализация стилей состояний селекта
+setupSelectStylesHandler(); // Инициализация стилей состояний селекта
 initHeroSlider(); // Инициализация hero слайдера
 initProgramsSlider(); // Инициализация programs слайдера
 initReviewsSlider(); // Инициализация reviews слайдера

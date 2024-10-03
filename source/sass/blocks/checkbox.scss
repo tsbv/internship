@@ -105,11 +105,11 @@
 
 .checkbox__control {
   position: absolute;
+  width: 20px;
+  height: 20px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
   background-color: $white;
   border-radius: 2px;
   transition: background-color 0.3s, border 0.3s;

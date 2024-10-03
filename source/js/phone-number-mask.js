@@ -1,4 +1,4 @@
-const numberMaskHandler = () => {
+const setupPhoneNumberMask = () => {
   const phoneInputNodes = document.querySelectorAll('.field--tel');
   const formatPhoneNumber = (value) => {
     if (!value) {
@@ -21,4 +21,4 @@ const numberMaskHandler = () => {
   });
 };
 
-export { numberMaskHandler };
+export { setupPhoneNumberMask };

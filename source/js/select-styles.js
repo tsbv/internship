@@ -1,4 +1,4 @@
-const initializeSelectStyles = () => {
+const setupSelectStylesHandler = () => {
   const selectButtonNode = document.querySelector('.select__button');
   const labelNode = document.querySelector('.form-element__select-label');
   const darkSelectButtonNode = document.querySelector('.select--dark .select__button');
@@ -40,4 +40,4 @@ const initializeSelectStyles = () => {
   }
 };
 
-export { initializeSelectStyles };
+export { setupSelectStylesHandler };
