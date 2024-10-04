@@ -374,7 +374,7 @@
         right: 20px;
 
         @media (min-width: $tablet-width) {
-          right: 20px;
+          right: 25px;
         }
       }
 
@@ -385,7 +385,23 @@
   }
 
   &:active {
+    background-color: $primary;
     border-color: initial;
+    color: rgba(255, 255, 255, 0.7);
+
+    &::before {
+      background-color: rgba(49, 109, 194, 0.7);
+      right: 20px;
+
+      @media (min-width: $tablet-width) {
+        right: 25px;
+      }
+    }
+
+    &::after {
+      background-color: $white;
+    }
+
   }
 
   &:focus-visible {
