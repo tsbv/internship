@@ -433,9 +433,10 @@
   }
 
   .swiper-wrapper {
+    height: 640px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    height: 640px;
+    grid-auto-flow: column;
     gap: 20px 0;
 
     @media (min-width: $tablet-width) {
@@ -457,26 +458,19 @@
     min-height: 330px;
 
     &:nth-child(2) .swiper-slide-large,
-    &:nth-child(4) .swiper-slide-large {
-      min-height: 330px;
-    }
-
-    &:nth-child(13) .swiper-slide-large,
-    &:nth-child(15) .swiper-slide-large {
+    &:nth-child(7) .swiper-slide-large,
+    &:nth-child(9) .swiper-slide-large {
       min-height: 240px;
+
+      @media (min-width: $tablet-width) {
+        min-height: inherit;
+      }
     }
 
     @media (min-width: $tablet-width) {
       min-width: 324px;
       max-width: 324px;
       min-height: 350px;
-
-      &:nth-child(2) .swiper-slide-large,
-      &:nth-child(4) .swiper-slide-large,
-      &:nth-child(13) .swiper-slide-large,
-      &:nth-child(15) .swiper-slide-large {
-        min-height: 350px;
-      }
     }
 
     @media (min-width: $desktop-width) {

@@ -64,7 +64,16 @@
   }
 }
 
-.news__item:nth-child(1) {
+.news__item:nth-child(1),
+.news__item:nth-child(3) {
+  order: -1;
+
+  @media (min-width: $desktop-width) {
+    order: initial;
+  }
+}
+
+.news__item:nth-child(6) {
   order: -1;
 
   @media (min-width: $tablet-width) {
