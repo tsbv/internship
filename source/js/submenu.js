@@ -1,5 +1,5 @@
 const navSubmenuHandler = () => {
-  const navLinkNodes = document.querySelectorAll('.nav__link-arrow');
+  const navLinkNodes = document.querySelectorAll('.nav__link-button');
   navLinkNodes.forEach((navLinkNode) => {
     navLinkNode.addEventListener('click', (event) => {
       event.preventDefault();

@@ -64,17 +64,17 @@
   }
 }
 
-.nav__link-arrow {
-  padding-right: 20px;
+.nav__link-button {
+  padding: 0 20px 0 0;
 }
 
 .nav__item:nth-child(5) {
-  .nav__link.nav__link-arrow {
+  .nav__link.nav__link-button {
     max-width: 101px;
   }
 }
 
-.nav__link-arrow::after {
+.nav__link-button::after {
   content: "";
   position: absolute;
   width: 12px;
