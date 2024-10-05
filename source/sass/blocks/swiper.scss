@@ -467,6 +467,11 @@
       }
     }
 
+    &:nth-child(8) .swiper-slide-large,
+    &:nth-child(10) .swiper-slide-large {
+      min-height: 330px;
+    }
+
     @media (min-width: $tablet-width) {
       min-width: 324px;
       max-width: 324px;
