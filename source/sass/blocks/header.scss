@@ -76,11 +76,12 @@
 
   &:active {
     border-color: initial;
-    color: $white;
+    color: rgba(255, 255, 255, 0.7);
     background-color: $primary;
 
     &::before {
       transform: translate(50%, -50%);
+      background-color: rgba(49, 109, 194, 0.7);
       right: 27px;
     }
 
