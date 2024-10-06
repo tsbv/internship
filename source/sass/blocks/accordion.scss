@@ -29,8 +29,8 @@
     color: $beige;
     opacity: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease;
     will-change: max-height;
-    transition: all 0.3s ease-out;
     box-sizing: content-box;
 
     @media (min-width: $tablet-width) {

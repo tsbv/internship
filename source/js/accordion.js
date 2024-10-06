@@ -1,5 +1,5 @@
 const accordionHandler = () => {
-  const THIRD_ACCORDION_INDEX = 2;
+  const OPENED_ACCORDION_INDEX = 2;
   const accordionNodes = document.querySelectorAll('.accordion');
   accordionNodes.forEach((accordionNode, index) => {
     const controlNode = accordionNode.querySelector('.accordion__control');
@@ -10,7 +10,7 @@ const accordionHandler = () => {
       contentNode.setAttribute('aria-hidden', (!open).toString());
       contentNode.style.maxHeight = open ? `${contentNode.scrollHeight}px` : null;
     };
-    if (index === THIRD_ACCORDION_INDEX) {
+    if (index === OPENED_ACCORDION_INDEX) {
       toggleAccordion(true);
     }
     accordionNode.addEventListener('click', () =>
