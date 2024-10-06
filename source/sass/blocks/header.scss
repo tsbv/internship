@@ -63,7 +63,7 @@
       background-color: $primary;
 
       &::before {
-        right: 17px;
+        right: 18px;
         background-color: $primary;
         transform: translateY(-50%);
       }
@@ -76,9 +76,16 @@
 
   &:active {
     border-color: initial;
+    color: $white;
+    background-color: $primary;
 
     &::before {
-      transform: translateY(-50%);
+      transform: translate(50%, -50%);
+      right: 27px;
+    }
+
+    &::after {
+      background-color: $white;
     }
   }
 
@@ -108,13 +115,14 @@
   background-color: $primary;
 
   @media (min-width: $tablet-width) {
+    max-width: 286px;
     right: 0;
   }
 
   &::before {
     width: 20px;
     height: 20px;
-    right: 17px;
+    right: 18px;
     background-color: $primary;
     mask-image: url("/__spritemap#sprite-burger-close-view");
     mask-repeat: no-repeat;
@@ -124,7 +132,17 @@
     background-color: $white;
   }
 
-  @media (min-width: $tablet-width) {
-    max-width: 286px;
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgba(49, 109, 194, 0.9);
+    }
+
+    &::before {
+      transform: translate(0, -50%);
+    }
+  }
+
+  &:focus-visible {
+    background-color: rgba(49, 109, 194, 0.9);
   }
 }
