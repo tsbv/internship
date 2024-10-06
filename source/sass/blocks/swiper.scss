@@ -471,6 +471,14 @@
     &:nth-child(8) .swiper-slide-large,
     &:nth-child(10) .swiper-slide-large {
       min-height: 330px;
+
+      @media (min-width: $tablet-width) {
+        min-height: 350px;
+      }
+
+      @media (min-width: $desktop-width) {
+        min-height: 400px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -534,12 +542,13 @@
 
   .swiper-pagination {
     margin-top: 24px;
-    position: static;
+    position: relative;
     display: flex;
     gap: 16px;
     justify-content: center;
 
     @media (min-width: $tablet-width) {
+      position: static;
       margin-top: 30px;
       gap: 20px;
     }
@@ -547,6 +556,13 @@
     @media (min-width: $desktop-width) {
       margin-top: 40px;
     }
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
   }
 
   .swiper-pagination-bullet {
