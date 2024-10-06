@@ -54,21 +54,15 @@
     position: absolute;
     width: 34px;
     height: 34px;
-    top: 4px;
+    top: 50%;
     right: 4px;
+    transform: translateY(-50%);
     background-color: $primary;
     border-radius: 44px;
 
     @media (min-width: $tablet-width) {
       width: 46px;
       height: 46px;
-      top: 3px;
-      right: 3px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 5px;
-      right: 5px;
     }
   }
 

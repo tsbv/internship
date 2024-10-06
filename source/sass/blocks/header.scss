@@ -23,6 +23,7 @@
 }
 
 .header__toggle {
+  max-width: 290px;
   min-height: 54px;
   font-size: 14px;
   background-color: $white;
@@ -30,6 +31,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 4px 60px 5px 20px;
+    max-width: 286px;
     min-height: 56px;
   }
 
@@ -47,13 +49,9 @@
     padding: 19px 14px;
     width: 46px;
     height: 46px;
-    top: 3px;
+    top: 50%;
     right: 4px;
     transition: all 0.3s ease;
-
-    @media (min-width: $tablet-width) {
-      top: 4px;
-    }
   }
 
   @media (hover: hover) {

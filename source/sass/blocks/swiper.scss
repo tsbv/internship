@@ -354,6 +354,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 0 64px;
     min-height: 483px;
 
     .swiper-slide {
@@ -377,7 +378,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      bottom: 4px;
+      bottom: 12px;
     }
   }
 
