@@ -24,10 +24,16 @@ const initReviewsSlider = () => {
       },
       768: {
         slidesPerGroup: 1,
+        scrollbar: {
+          dragSize: 326,
+        }
       },
       1440: {
         allowTouchMove: false,
         spaceBetween: 32,
+        scrollbar: {
+          dragSize: 394,
+        },
       }
     },
   });

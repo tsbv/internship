@@ -26,12 +26,18 @@ const initProgramsSlider = () => {
       768: {
         slidesPerView: 2,
         slidesPerGroup: 1,
+        scrollbar: {
+          dragSize: 326,
+        }
       },
       1440: {
         slidesPerView: 3,
         slidesPerGroup: 1,
         allowTouchMove: false,
         spaceBetween: 32,
+        scrollbar: {
+          dragSize: 394,
+        },
       }
     },
   });
