@@ -28,7 +28,7 @@
   min-height: 54px;
   font-size: 14px;
   background-color: $white;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   @media (min-width: $tablet-width) {
     padding: 4px 60px 5px 20px;
@@ -47,7 +47,7 @@
     background-color: $white;
     mask-image: url("/__spritemap#sprite-burger-view");
     mask-repeat: no-repeat;
-    transition: all 0.3s ease;
+    transition: mask-image 0.3s ease;
   }
 
   &::after {
@@ -56,7 +56,7 @@
     height: 46px;
     top: 50%;
     right: 3px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
   }
 
   @media (hover: hover) {
@@ -66,7 +66,7 @@
       background-color: $primary;
 
       &::before {
-        right: 18px;
+        right: 16px;
         background-color: $primary;
         transform: translateY(-50%);
       }
@@ -84,8 +84,7 @@
 
     &::before {
       transform: translate(50%, -50%);
-      background-color: rgba(49, 109, 194, 0.7);
-      right: 27px;
+      right: 26px;
     }
 
     &::after {
@@ -140,10 +139,6 @@
   @media (hover: hover) {
     &:hover {
       background-color: rgba(49, 109, 194, 0.9);
-    }
-
-    &::before {
-      transform: translate(0, -50%);
     }
   }
 
