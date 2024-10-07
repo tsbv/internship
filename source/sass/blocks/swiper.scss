@@ -385,7 +385,7 @@
 
   .swiper-navigation-wrapper {
     margin: 0 0 0 auto;
-    padding: 20px 0 0;
+    padding: 22px 0 0;
     min-width: 52px;
     max-width: 52px;
     min-height: 22px;
@@ -395,6 +395,7 @@
 
     @media (min-width: $tablet-width) {
       margin: 0;
+      padding: 20px 0 0;
       position: absolute;
       right: 45px;
       bottom: 0;

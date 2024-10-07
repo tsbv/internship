@@ -23,7 +23,7 @@
 }
 
 .header__toggle {
-  padding: 4px 60px 5px 19px;
+  padding: 4px 60px 5px 20px;
   max-width: 290px;
   min-height: 54px;
   font-size: 14px;
@@ -37,13 +37,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 54px;
+    min-height: 56px;
   }
 
   &::before {
     width: 18px;
     height: 8px;
-    right: 16px;
+    right: 18px;
     background-color: $white;
     mask-image: url("/__spritemap#sprite-burger-view");
     mask-repeat: no-repeat;
@@ -55,7 +55,7 @@
     width: 46px;
     height: 46px;
     top: 50%;
-    right: 3px;
+    right: 4px;
     transition: background-color 0.3s ease;
   }
 
@@ -66,7 +66,7 @@
       background-color: $primary;
 
       &::before {
-        right: 16px;
+        right: 18px;
         background-color: $primary;
         transform: translateY(-50%);
       }
@@ -84,7 +84,7 @@
 
     &::before {
       transform: translate(50%, -50%);
-      right: 26px;
+      right: 27px;
     }
 
     &::after {
@@ -139,10 +139,20 @@
   @media (hover: hover) {
     &:hover {
       background-color: rgba(49, 109, 194, 0.9);
+
+      &::before {
+        right: 16px;
+      }
     }
   }
 
   &:focus-visible {
     background-color: rgba(49, 109, 194, 0.9);
+  }
+
+  &:active {
+    &::before {
+      right: 26px;
+    }
   }
 }
