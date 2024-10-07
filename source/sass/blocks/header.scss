@@ -23,6 +23,7 @@
 }
 
 .header__toggle {
+  padding: 4px 60px 5px 19px;
   max-width: 290px;
   min-height: 54px;
   font-size: 14px;
@@ -35,10 +36,14 @@
     min-height: 56px;
   }
 
+  @media (min-width: $desktop-width) {
+    min-height: 54px;
+  }
+
   &::before {
     width: 18px;
     height: 8px;
-    right: 18px;
+    right: 16px;
     background-color: $white;
     mask-image: url("/__spritemap#sprite-burger-view");
     mask-repeat: no-repeat;
@@ -50,7 +55,7 @@
     width: 46px;
     height: 46px;
     top: 50%;
-    right: 4px;
+    right: 3px;
     transition: all 0.3s ease;
   }
 
@@ -116,12 +121,13 @@
   @media (min-width: $tablet-width) {
     max-width: 286px;
     right: 0;
+    min-height: 54px;
   }
 
   &::before {
     width: 20px;
     height: 20px;
-    right: 18px;
+    right: 16px;
     background-color: $primary;
     mask-image: url("/__spritemap#sprite-burger-close-view");
     mask-repeat: no-repeat;
