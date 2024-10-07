@@ -278,9 +278,17 @@
 
   &:focus-visible {
     outline: none;
+    background-color: transparent;
+    color: $white;
+    border-color: $white;
 
     &::before {
-      transform: rotate(45deg) translate(-3px, -3px);
+      background-color: $primary;
+      transform: rotate(45deg) translate(0, -5px);
+    }
+
+    &::after {
+      background-color: $white;
     }
   }
 
