@@ -1,13 +1,13 @@
 .form {
   padding: 43px 10px 40px;
   position: relative;
-  background-image: url("../../img/form/form-mobile.png");
+  background-image: url("/img/form/form-mobile.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 40px;
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../img/form/form-mobile@2x.png");
+    background-image: url("/img/form/form-mobile@2x.png");
     background-size: cover;
   }
 
@@ -48,22 +48,22 @@
   @media (min-width: $tablet-width) {
     max-width: 652px;
     background-color: #a3aca5;
-    background-image: url("../../img/form/form-tablet.png");
+    background-image: url("/img/form/form-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/form/form-tablet@2x.png");
+      background-image: url("/img/form/form-tablet@2x.png");
     }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1240px;
-    background-image: url("../../img/form/form-desktop.png");
+    background-image: url("/img/form/form-desktop.png");
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/form/form-desktop@2x.png");
+      background-image: url("/img/form/form-desktop@2x.png");
     }
   }
 }

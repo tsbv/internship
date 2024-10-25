@@ -54,73 +54,73 @@
 }
 
 .program--internships {
-  background-image: url("../../img/programs/program-slide-1-mobile.png");
+  background-image: url("/img/programs/program-slide-1-mobile.png");
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../img/programs/program-slide-1-mobile@2x.png");
+    background-image: url("/img/programs/program-slide-1-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/programs/program-slide-1-tablet.png");
+    background-image: url("/img/programs/program-slide-1-tablet.png");
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/programs/program-slide-1-tablet@2x.png");
+      background-image: url("/img/programs/program-slide-1-tablet@2x.png");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/programs/program-slide-1-desktop.png");
+    background-image: url("/img/programs/program-slide-1-desktop.png");
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/programs/program-slide-1-desktop@2x.png");
+      background-image: url("/img/programs/program-slide-1-desktop@2x.png");
     }
   }
 }
 
 .program--volunteering {
-  background-image: url("../../img/programs/program-slide-2-mobile.png");
+  background-image: url("/img/programs/program-slide-2-mobile.png");
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../img/programs/program-slide-2-mobile@2x.png");
+    background-image: url("/img/programs/program-slide-2-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/programs/program-slide-2-tablet.png");
+    background-image: url("/img/programs/program-slide-2-tablet.png");
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/programs/program-slide-2-tablet@2x.png");
+      background-image: url("/img/programs/program-slide-2-tablet@2x.png");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/programs/program-slide-2-desktop.png");
+    background-image: url("/img/programs/program-slide-2-desktop.png");
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/programs/program-slide-2-desktop@2x.png");
+      background-image: url("/img/programs/program-slide-2-desktop@2x.png");
     }
   }
 }
 
 .program--studies {
-  background-image: url("../../img/programs/program-slide-3-mobile.png");
+  background-image: url("/img/programs/program-slide-3-mobile.png");
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../img/programs/program-slide-3-mobile@2x.png");
+    background-image: url("/img/programs/program-slide-3-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/programs/program-slide-3-tablet.png");
+    background-image: url("/img/programs/program-slide-3-tablet.png");
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/programs/program-slide-3-tablet@2x.png");
+      background-image: url("/img/programs/program-slide-3-tablet@2x.png");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/programs/program-slide-3-desktop.png");
+    background-image: url("/img/programs/program-slide-3-desktop.png");
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/programs/program-slide-3-desktop@2x.png");
+      background-image: url("/img/programs/program-slide-3-desktop@2x.png");
     }
   }
 }
